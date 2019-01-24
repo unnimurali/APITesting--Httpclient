@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6658" started-at="2019-01-24T17:45:05Z" finished-at="2019-01-24T17:45:12Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6658" started-at="2019-01-24T17:45:05Z" finished-at="2019-01-24T17:45:12Z">
+      <class name="apitests.com.avlview.app.GetVehicleTypeTest">
+        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:apitests.com.avlview.app.GetVehicleTypeTest@2b98378d]" name="getAPITestWithHeaders" duration-ms="581" started-at="2019-01-24T17:45:09Z" finished-at="2019-01-24T17:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GetVehicleTypeTest@2b98378d]" name="setup" is-config="true" duration-ms="0" started-at="2019-01-24T17:45:09Z" finished-at="2019-01-24T17:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- apitests.com.avlview.app.GetVehicleTypeTest -->
+      <class name="apitests.com.avlview.app.GetdriversTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GetdriversTest@18be83e4]" name="setup" is-config="true" duration-ms="16" started-at="2019-01-24T17:45:05Z" finished-at="2019-01-24T17:45:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:apitests.com.avlview.app.GetdriversTest@18be83e4]" name="getAPITestWithHeaders" duration-ms="2038" started-at="2019-01-24T17:45:05Z" finished-at="2019-01-24T17:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+      </class> <!-- apitests.com.avlview.app.GetdriversTest -->
+      <class name="apitests.com.avlview.app.GetDisconnectedVehicles">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GetDisconnectedVehicles@cb5822]" name="setup" is-config="true" duration-ms="0" started-at="2019-01-24T17:45:07Z" finished-at="2019-01-24T17:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:apitests.com.avlview.app.GetDisconnectedVehicles@cb5822]" name="getAPITestWithHeaders" duration-ms="616" started-at="2019-01-24T17:45:07Z" finished-at="2019-01-24T17:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+      </class> <!-- apitests.com.avlview.app.GetDisconnectedVehicles -->
+      <class name="apitests.com.avlview.app.GetavlCountrylistTest">
+        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:apitests.com.avlview.app.GetavlCountrylistTest@475530b9]" name="getAPITestWithHeaders" duration-ms="2610" started-at="2019-01-24T17:45:09Z" finished-at="2019-01-24T17:45:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GetavlCountrylistTest@475530b9]" name="setup" is-config="true" duration-ms="0" started-at="2019-01-24T17:45:09Z" finished-at="2019-01-24T17:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- apitests.com.avlview.app.GetavlCountrylistTest -->
+      <class name="apitests.com.avlview.app.GetDevicesTest">
+        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:apitests.com.avlview.app.GetDevicesTest@4b9e13df]" name="getAPITestWithHeaders" duration-ms="735" started-at="2019-01-24T17:45:08Z" finished-at="2019-01-24T17:45:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAPITestWithHeaders -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GetDevicesTest@4b9e13df]" name="setup" is-config="true" duration-ms="0" started-at="2019-01-24T17:45:08Z" finished-at="2019-01-24T17:45:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- apitests.com.avlview.app.GetDevicesTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
