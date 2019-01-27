@@ -1,6 +1,8 @@
-package com.avlview.tests;
+package apitests.com.avlview.app;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -8,6 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.apache.http.Header;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -22,8 +25,8 @@ import com.alview.client.RestClient;
 import com.avlview.base.TestBase;
 import com.avlview.util.TestUtil;
 
-public class rough4 extends TestBase {
-
+public class GetVehicleRawDetails extends TestBase {
+	
 	TestBase testbase;
 	String serviceurl;
 	String apiurl;
@@ -34,44 +37,53 @@ public class rough4 extends TestBase {
 	public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 	String jsonPrettyPrintString;
 	JSONObject xmlJSONObj;
+	String responseString;
 
 	@BeforeMethod
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
-		apiurl = prop.getProperty("APIURL");
+		apiurl = prop.getProperty("getVehicleRawDetails");
 
 		url = serviceurl + apiurl;
 	}
 
 	@Test(enabled = true)
 	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("Content-Type", "application/xml");
-		headers.put("apiKey", "03-Wuw6bz4AeO6nEX0Ni4le");
+		headers.put("apiKey", "eFYqcQJOYW563VDxPia4");//nabeel
+		
+		URIBuilder builder = new URIBuilder();
+		builder.setScheme(url).setParameter("vehicleId", "19838")
+		.setParameter("fromDate", "26-01-2019")
+		.setParameter("toDate", "26-01-2019");
 
+		URI uri = builder.build();
+		System.out.println(uri);
+		
 		httpresponse = restclient.get(url, headers);
-		//System.out.println(httpresponse);
-		//System.out.println(headers);
+		 System.out.println(httpresponse);
+		 System.out.println(headers); 
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
-		//System.out.println(statuscode);
-		Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
+		 System.out.println(statuscode);
+		//Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
-		String responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
-		//System.out.println(responseString);
+		responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
+		// System.out.println(responseString);
 
-		String str2 = responseString.replace("<devices>", "").replace("</devices>", "");
-		//System.out.println(str2);
+		responseString = responseString.replace("<vehiclerawdetaillist>", "").replace("</vehiclerawdetaillist>", "");
+		// System.out.println(str2);
 
 		try {
-			xmlJSONObj = XML.toJSONObject(str2);
+			xmlJSONObj = XML.toJSONObject(responseString);
 			jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
-			//System.out.println(jsonPrettyPrintString);
+			// System.out.println(jsonPrettyPrintString);
 		} catch (JSONException je) {
 			System.out.println(je.toString());
 		}
@@ -79,34 +91,19 @@ public class rough4 extends TestBase {
 		JSONObject responsejson = new JSONObject(jsonPrettyPrintString);
 		System.out.println(responsejson);
 
-		 
-		 String status = TestUtil.getValueByJPath(responsejson, "/status");
-		 System.out.println(status);
-		 Assert.assertEquals(status, "200");
+		String status = TestUtil.getValueByJPath(responsejson, "/status");
+		System.out.println(status);
+		//Assert.assertEquals(status, "200");
 
-		 String id = TestUtil.getValueByJPath(responsejson,"/device[1]/deviceId");
-		 System.out.println(id);
-		 
-		 String devicename = TestUtil.getValueByJPath(responsejson,"/device[1]/deviceName");
-		 System.out.println(devicename);
-		 
-		 JSONArray DevicArray = responsejson.getJSONArray("device");
-		//System.out.println("values from devices: " + spellingsArray);
-		 System.out.println(DevicArray.length());
-		
-		 
+		String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
+		System.out.println(id);
 
-		 
-		// String id = TestUtil.getValueByJPath(responsejson, "/device[0]/deviceId");
-		// String devicename = TestUtil.getValueByJPath(responsejson,
-		// "/device[0]/deviceName");
-		// String firstName = TestUtil.getValueByJPath(responsejson,
-		// "/data[0]/first_name");
+		String name = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleName");
+		System.out.println(name);
 
-		// System.out.println(id);
-		// System.out.println(devicename);
-		// System.out.println(avatar);
-		// System.out.println(firstName);
+		JSONArray DevicArray = responsejson.getJSONArray("vehiclerRawDetail");
+		// System.out.println("values from devices: " + spellingsArray);
+		System.out.println(DevicArray.length());
 
 		Header[] headersarray = httpresponse.getAllHeaders();
 		HashMap<String, String> allheaders = new HashMap<String, String>();
@@ -119,5 +116,6 @@ public class rough4 extends TestBase {
 		System.out.println(allheaders);
 
 	}
+
 
 }
