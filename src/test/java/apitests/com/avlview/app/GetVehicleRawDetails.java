@@ -16,7 +16,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.XML;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
@@ -26,7 +25,7 @@ import com.avlview.base.TestBase;
 import com.avlview.util.TestUtil;
 
 public class GetVehicleRawDetails extends TestBase {
-	
+
 	TestBase testbase;
 	String serviceurl;
 	String apiurl;
@@ -49,36 +48,36 @@ public class GetVehicleRawDetails extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException, URISyntaxException {
+	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
+			ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("Content-Type", "application/xml");
-		headers.put("apiKey", "eFYqcQJOYW563VDxPia4");//nabeel
-		
+		headers.put("apiKey", "eFYqcQJOYW563VDxPia4");// nabeel
+
 		URIBuilder builder = new URIBuilder();
-		builder.setScheme(url).setParameter("vehicleId", "19838")
-		.setParameter("fromDate", "26-01-2019")
-		.setParameter("toDate", "26-01-2019");
+		builder.setScheme(url).setParameter("vehicleId", "19838").setParameter("fromDate", "26-01-2019")
+				.setParameter("toDate", "26-01-2019");
 
 		URI uri = builder.build();
 		System.out.println(uri);
-		
+
 		httpresponse = restclient.get(url, headers);
-		 System.out.println(httpresponse);
-		 System.out.println(headers); 
+		System.out.println(httpresponse);
+		System.out.println(headers);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
-		 System.out.println(statuscode);
-		//Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
+		System.out.println(statuscode);
+		// Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
 		responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
 		// System.out.println(responseString);
 
 		responseString = responseString.replace("<vehiclerawdetaillist>", "").replace("</vehiclerawdetaillist>", "");
 		// System.out.println(str2);
+		System.out.println(responseString);
 
 		try {
 			xmlJSONObj = XML.toJSONObject(responseString);
@@ -93,7 +92,7 @@ public class GetVehicleRawDetails extends TestBase {
 
 		String status = TestUtil.getValueByJPath(responsejson, "/status");
 		System.out.println(status);
-		//Assert.assertEquals(status, "200");
+		// Assert.assertEquals(status, "200");
 
 		String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
 		System.out.println(id);
@@ -116,6 +115,5 @@ public class GetVehicleRawDetails extends TestBase {
 		System.out.println(allheaders);
 
 	}
-
 
 }

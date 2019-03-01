@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18131" started-at="2019-01-27T18:06:06Z" finished-at="2019-01-27T18:06:24Z">
+  <suite name="Default suite" duration-ms="3545" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18131" started-at="2019-01-27T18:06:06Z" finished-at="2019-01-27T18:06:24Z">
-      <class name="com.avlview.tests.rough_getwithparameters">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.avlview.tests.rough_getwithparameters@475530b9]" name="setup" is-config="true" duration-ms="15" started-at="2019-01-27T18:06:06Z" finished-at="2019-01-27T18:06:06Z">
+    <test name="Default test" duration-ms="3545" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
+      <class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@e2cbe0]" name="setup" is-config="true" duration-ms="26" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAPITestWithHeaders()[pri:0, instance:com.avlview.tests.rough_getwithparameters@475530b9]" name="getAPITestWithHeaders" duration-ms="18081" started-at="2019-01-27T18:06:06Z" finished-at="2019-01-27T18:06:24Z">
+        <test-method status="PASS" signature="PostAPITest()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@e2cbe0]" name="PostAPITest" duration-ms="3452" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAPITestWithHeaders -->
-      </class> <!-- com.avlview.tests.rough_getwithparameters -->
+        </test-method> <!-- PostAPITest -->
+      </class> <!-- apitests.com.avlview.app.POSTMethods.getSummaryReportTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -26,7 +26,7 @@ import com.avlview.base.TestBase;
 import com.avlview.util.TestUtil;
 
 public class rough_getwithparameters extends TestBase {
-	
+
 	TestBase testbase;
 	String serviceurl;
 	String apiurl;
@@ -49,73 +49,74 @@ public class rough_getwithparameters extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException, URISyntaxException {
+	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
+			ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("Content-Type", "application/xml");
-		headers.put("apiKey", "eFYqcQJOYW563VDxPia4");//nabeel
-		
-		//System.out.println(url);
-		
-		
+		headers.put("apiKey", "eFYqcQJOYW563VDxPia4");// nabeel
+
+		// System.out.println(url);
+
 		int firstIndex = serviceurl.indexOf(':');
-		//System.out.println("First occurrence of char ':'" + " is found at : " + firstIndex);
+		// System.out.println("First occurrence of char ':'" + " is found at : " +
+		// firstIndex);
 
 		String scheme = serviceurl.substring(0, firstIndex).trim();
-		//System.out.println(scheme);
-		
-		/*String scheme = url.substring(0, 4);
-		System.out.println(scheme);*/
-		
-		/*String host = url.substring(7, 22);
-		System.out.println(host);*/
-		
-		
+		// System.out.println(scheme);
+
+		/*
+		 * String scheme = url.substring(0, 4); System.out.println(scheme);
+		 */
+
+		/*
+		 * String host = url.substring(7, 22); System.out.println(host);
+		 */
+
 		int startIndex = url.indexOf("app");
-		if(startIndex == - 1) {
+		if (startIndex == -1) {
 			System.out.println("App not found");
 		} else {
-			System.out.println("Found App at index "+ startIndex);
+			System.out.println("Found App at index " + startIndex);
 		}
-		
+
 		int endIndex = url.indexOf("api");
-		if(endIndex == - 1) {
+		if (endIndex == -1) {
 			System.out.println("api not found");
 		} else {
-			System.out.println("Found api at index "+ endIndex);
+			System.out.println("Found api at index " + endIndex);
 		}
-		
-		String host = url.substring(startIndex, endIndex-1);
-		//System.out.println(host);
-		
-		String setpath=prop.getProperty("getVehicleRawDetails");
-		//System.out.println(setpath);
-		
+
+		String host = url.substring(startIndex, endIndex - 1);
+		// System.out.println(host);
+
+		String setpath = prop.getProperty("getVehicleRawDetails");
+		// System.out.println(setpath);
+
 		URIBuilder builder = new URIBuilder();
-	
-		/*builder.setScheme("http").setHost("app.avlview.com").setPath("api/getVehicleRawDetails")
-	    .setParameter("vehicleId", "19838")
-	    .setParameter("fromDate", "26-01-2019")
-	    .setParameter("toDate", "26-01-2019");*/
-		
-		builder.setScheme(scheme).setHost(host).setPath(setpath)
-		.setParameter("vehicleId", "19838")
-		.setParameter("fromDate", "26-01-2019")
-		.setParameter("toDate", "26-01-2019");
-	     
+
+		/*
+		 * builder.setScheme("http").setHost("app.avlview.com").setPath(
+		 * "api/getVehicleRawDetails") .setParameter("vehicleId", "19838")
+		 * .setParameter("fromDate", "26-01-2019") .setParameter("toDate",
+		 * "26-01-2019");
+		 */
+
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("vehicleId", "19838")
+				.setParameter("fromDate", "26-02-2019").setParameter("toDate", "26-02-2019");
+
 		URI uri = builder.build();
-		//System.out.println(uri);
-		
+		// System.out.println(uri);
+
 		httpresponse = restclient.getparameter(uri, headers);
 		// System.out.println(httpresponse);
-		// System.out.println(headers); 
+		// System.out.println(headers);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
 		System.out.println(statuscode);
-		//Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
+		// Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
 		responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
 		// System.out.println(responseString);
@@ -126,7 +127,7 @@ public class rough_getwithparameters extends TestBase {
 		try {
 			xmlJSONObj = XML.toJSONObject(responseString);
 			jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
-			//System.out.println(jsonPrettyPrintString);
+			// System.out.println(jsonPrettyPrintString);
 		} catch (JSONException je) {
 			System.out.println(je.toString());
 		}
@@ -135,7 +136,7 @@ public class rough_getwithparameters extends TestBase {
 		System.out.println(responsejson);
 
 		String status = TestUtil.getValueByJPath(responsejson, "/status");
-		//System.out.println(status);
+		// System.out.println(status);
 		Assert.assertEquals(status, "200");
 
 		String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
@@ -156,7 +157,7 @@ public class rough_getwithparameters extends TestBase {
 
 		}
 
-		//System.out.println(allheaders);
+		// System.out.println(allheaders);
 
 	}
 

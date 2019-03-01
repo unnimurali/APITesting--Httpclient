@@ -1,14 +1,12 @@
 package com.alview.client;
 
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.http.Header;
 import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -91,7 +89,7 @@ public class RestClient {
 
 		CloseableHttpClient httpclient = HttpClients.createDefault();
 		HttpGet getMethod = new HttpGet(uri);
-		//System.out.println(uri);
+		// System.out.println(uri);
 
 		for (Map.Entry<String, String> entry : Headermap.entrySet()) {
 			getMethod.addHeader(entry.getKey(), entry.getValue());
@@ -108,6 +106,23 @@ public class RestClient {
 		}
 
 		return response;
+
+	}
+
+	public CloseableHttpResponse postwitouthpayload(String url, String entity, HashMap<String, String> headermap)
+			throws ClientProtocolException, IOException {
+
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+		HttpPost httppost = new HttpPost(url);
+		// httppost.setEntity(new StringEntity(entity));
+		httppost.setEntity(new StringEntity("[]"));
+
+		for (Map.Entry<String, String> entry : headermap.entrySet()) {
+			httppost.addHeader(entry.getKey(), entry.getValue());
+		}
+
+		CloseableHttpResponse HttpResponse = httpclient.execute(httppost);
+		return HttpResponse;
 
 	}
 
