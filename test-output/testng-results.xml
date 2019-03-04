@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3545" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
+  <suite name="Default suite" duration-ms="9025" started-at="2019-03-04T10:49:32Z" finished-at="2019-03-04T10:49:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3545" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
-      <class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@e2cbe0]" name="setup" is-config="true" duration-ms="26" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:14Z">
+    <test name="Default test" duration-ms="9025" started-at="2019-03-04T10:49:32Z" finished-at="2019-03-04T10:49:41Z">
+      <class name="apitests.com.avlview.app.POSTMethods.addorgunitTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@e2cbe0]" name="setup" is-config="true" duration-ms="45" started-at="2019-03-04T10:49:32Z" finished-at="2019-03-04T10:49:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="PostAPITest()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@e2cbe0]" name="PostAPITest" duration-ms="3452" started-at="2019-03-01T10:56:14Z" finished-at="2019-03-01T10:56:17Z">
+        <test-method status="PASS" signature="PostAPITest()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@e2cbe0]" name="PostAPITest" duration-ms="8782" started-at="2019-03-04T10:49:32Z" finished-at="2019-03-04T10:49:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PostAPITest -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.getSummaryReportTest -->
+      </class> <!-- apitests.com.avlview.app.POSTMethods.addorgunitTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

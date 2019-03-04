@@ -109,6 +109,21 @@ public class RestClient {
 
 	}
 
+	public CloseableHttpResponse postparameter(URI uri, String entity, HashMap<String, String> headermap)
+			throws ClientProtocolException, IOException {
+		CloseableHttpClient httpclient = HttpClients.createDefault();
+		HttpPost httppost = new HttpPost(uri);
+		httppost.setEntity(new StringEntity(entity));
+
+		for (Map.Entry<String, String> entry : headermap.entrySet()) {
+			httppost.addHeader(entry.getKey(), entry.getValue());
+		}
+
+		CloseableHttpResponse HttpResponse = httpclient.execute(httppost);
+		return HttpResponse;
+
+	}
+
 	public CloseableHttpResponse postwitouthpayload(String url, String entity, HashMap<String, String> headermap)
 			throws ClientProtocolException, IOException {
 
