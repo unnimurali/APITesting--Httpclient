@@ -42,7 +42,7 @@ public class getmovingvehiclesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getmovingvehicles()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

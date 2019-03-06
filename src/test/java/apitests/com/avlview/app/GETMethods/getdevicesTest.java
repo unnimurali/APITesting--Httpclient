@@ -46,8 +46,7 @@ public class getdevicesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getdevices() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

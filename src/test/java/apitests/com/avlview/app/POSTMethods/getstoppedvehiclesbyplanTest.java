@@ -46,7 +46,8 @@ public class getstoppedvehiclesbyplanTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void PostAPITest() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getstoppedvehiclesbyplan()
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

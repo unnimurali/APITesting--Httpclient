@@ -45,7 +45,7 @@ public class getvehiclemodelsTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
+	public void getvehiclemodels() throws ClientProtocolException, IOException, SAXException,
 			ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();

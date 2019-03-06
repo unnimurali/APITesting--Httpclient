@@ -43,7 +43,8 @@ public class getAlertDetailTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void PostAPITest() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getAlertDetail()
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

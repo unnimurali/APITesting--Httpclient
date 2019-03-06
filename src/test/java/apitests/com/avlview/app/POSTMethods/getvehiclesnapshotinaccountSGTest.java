@@ -46,7 +46,8 @@ public class getvehiclesnapshotinaccountSGTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void PostAPITest() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getvehiclesnapshotinaccountSG()
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

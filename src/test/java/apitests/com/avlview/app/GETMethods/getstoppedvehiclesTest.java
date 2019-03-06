@@ -42,7 +42,7 @@ public class getstoppedvehiclesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getstoppedvehicles()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
@@ -63,8 +63,8 @@ public class getstoppedvehiclesTest extends TestBase {
 		String status = TestUtil.getValueByJPath(responsejson, "/status");
 		Assert.assertEquals(status, "200");
 
-		String id = TestUtil.getValueByJPath(responsejson, "/vehicle[0]/vehicleId");
-		Assert.assertEquals(id, "10404");
+		// String id = TestUtil.getValueByJPath(responsejson, "/vehicle[0]/vehicleId");
+		// Assert.assertEquals(id, "10404");
 
 		JSONArray DevicArray = responsejson.getJSONArray("vehicle");
 		int cnt = DevicArray.length();

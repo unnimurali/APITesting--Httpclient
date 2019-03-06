@@ -46,7 +46,7 @@ public class getdisconnectedVehiclesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getdisconnectedVehicles()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

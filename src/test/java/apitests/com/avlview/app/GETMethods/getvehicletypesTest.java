@@ -42,7 +42,7 @@ public class getvehicletypesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getvehicletypes()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

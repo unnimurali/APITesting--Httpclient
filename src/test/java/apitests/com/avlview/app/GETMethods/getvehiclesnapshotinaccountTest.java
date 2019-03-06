@@ -42,7 +42,7 @@ public class getvehiclesnapshotinaccountTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getvehiclesnapshotinaccount()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

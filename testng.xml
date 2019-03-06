@@ -1,13 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test thread-count="5" name="Test">
+
+	<listeners>
+		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Get Requests">
 		<classes>
-			<class name="apitests.com.avlview.app.GetdriversTest" />
-			<class name="apitests.com.avlview.app.GetDisconnectedVehicles" />
-			<class name="apitests.com.avlview.app.GetDevicesTest" />
-			<class name="apitests.com.avlview.app.GetVehicleTypeTest" />
-			<class name="apitests.com.avlview.app.GetavlCountrylistTest" />
+
+			<class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getdevicesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehicletypesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.gettimezonesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehiclegroupsTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getdriversTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getavlcountrylistTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getplansTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehiclesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehicleoverviewTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getmovingvehiclesTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getTransportationAlertsTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getorgunitsTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest" />
+			<class
+				name="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest" />
+			<class name="apitests.com.avlview.app.GETMethods.removeTaskTest" />
+			<class name="apitests.com.avlview.app.GETMethods.updateodometerTest" />
+
+
 		</classes>
 	</test> <!-- Test -->
+
+	<test name="Post Requests">
+		<classes>
+
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest" />
+
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest" />
+
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest" />
+
+
+			<class name="apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getWaypointsTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getAlertDetailTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getTripDetailsTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getidlereportTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest" />
+
+			<class name="apitests.com.avlview.app.POSTMethods.addgroupTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.adddriverTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.saveFenceZoneTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.addorgunitTest" />
+			<class
+				name="apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.addvehicleTest" />
+
+		</classes>
+
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->

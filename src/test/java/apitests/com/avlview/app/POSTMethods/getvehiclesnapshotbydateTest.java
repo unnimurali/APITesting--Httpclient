@@ -46,7 +46,8 @@ public class getvehiclesnapshotbydateTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void PostAPITest() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getvehiclesnapshotbydate()
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

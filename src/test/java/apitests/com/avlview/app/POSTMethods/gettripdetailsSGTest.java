@@ -1,5 +1,6 @@
-package apitests.com.avlview.app.GETMethods;
+package apitests.com.avlview.app.POSTMethods;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -18,58 +19,72 @@ import org.xml.sax.SAXException;
 
 import com.alview.client.RestClient;
 import com.avlview.base.TestBase;
+import com.avlview.data.gettripdetailsSG;
 import com.avlview.util.TestUtil;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
-public class getvehiclesURL extends TestBase {
+public class gettripdetailsSGTest extends TestBase {
 
 	TestBase testbase;
 	String serviceurl;
-	String apiurl;
+	String apiposturl;
 	String url;
 	RestClient restclient;
 	CloseableHttpResponse httpresponse;
-
 	JSONObject xmlJSONObj;
-	String responseString;
 
 	@BeforeMethod
 	public void setup() {
 		testbase = new TestBase();
-		serviceurl = prop.getProperty("URL");
-		apiurl = prop.getProperty("getvehiclesURL");
 
-		url = serviceurl + apiurl;
+		serviceurl = prop.getProperty("URL");
+		apiposturl = prop.getProperty("gettripdetailsSG");
+
+		url = serviceurl + apiposturl;
+		System.out.println(url);
+
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void gettripdetailsSG()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
 
-		headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		headers.put("apiKey", prop.getProperty("apiKey_Get_Halwani"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
-		httpresponse = restclient.get(url, headers);
+		gettripdetailsSG gir = new gettripdetailsSG(prop.getProperty("vid"), prop.getProperty("st_dt"),
+				prop.getProperty("en_dt"), prop.getProperty("uid"), prop.getProperty("ug_id"),
+				prop.getProperty("sp_id"), prop.getProperty("sc_id"));
+
+		XmlMapper xmlMapper = new XmlMapper();
+		String destfilepath = System.getProperty("user.dir")
+				+ "\\src\\main\\java\\com\\avlview\\data\\gettripdetailsSG.xml";
+		xmlMapper.writeValue(new File(destfilepath), gir);
+
+		String resstring = xmlMapper.writeValueAsString(gir);
+		System.out.println(resstring);
+
+		httpresponse = restclient.post(url, resstring, headers);
+		System.out.println(httpresponse);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
+		System.out.println(statuscode);
 		Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
-		responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
-		JSONObject responsejson = new JSONObject(responseString);
+		String responseStringpost = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
+		System.out.println(responseStringpost);
+
+		JSONObject responsejson = new JSONObject(responseStringpost);
 
 		String status = TestUtil.getValueByJPath(responsejson, "/status");
 		Assert.assertEquals(status, "200");
 
-		String id = TestUtil.getValueByJPath(responsejson, "/vehicle[2]/vehicleId");
-		Assert.assertEquals(id, "16255");
-
-		JSONArray DevicArray = responsejson.getJSONArray("vehicle");
-		int cnt = DevicArray.length();
-		System.out.println(cnt);
-		Assert.assertEquals(cnt, 21);
+		JSONArray apn = responsejson.getJSONArray("tripdetails");
+		System.out.println(apn.length());
 
 		Header[] headersarray = httpresponse.getAllHeaders();
 		HashMap<String, String> allheaders = new HashMap<String, String>();
@@ -79,7 +94,7 @@ public class getvehiclesURL extends TestBase {
 
 		}
 
-		// System.out.println(allheaders);
+		System.out.println(allheaders);
 
 	}
 

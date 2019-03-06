@@ -45,7 +45,7 @@ public class getTransportationAlertsTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
+	public void getTransportationAlerts() throws ClientProtocolException, IOException, SAXException,
 			ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();

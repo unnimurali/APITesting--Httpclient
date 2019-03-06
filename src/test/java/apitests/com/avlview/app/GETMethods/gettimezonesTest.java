@@ -42,8 +42,7 @@ public class gettimezonesTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void gettimezones() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

@@ -42,8 +42,8 @@ public class saveFenceZoneTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
-			ParserConfigurationException, URISyntaxException {
+	public void saveFenceZone() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException,
+			URISyntaxException {
 
 		restclient = new RestClient();
 

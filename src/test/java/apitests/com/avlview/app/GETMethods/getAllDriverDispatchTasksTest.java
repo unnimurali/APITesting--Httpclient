@@ -1,6 +1,8 @@
 package apitests.com.avlview.app.GETMethods;
 
 import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.HashMap;
 
 import javax.xml.parsers.ParserConfigurationException;
@@ -8,6 +10,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.apache.http.Header;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -20,7 +23,7 @@ import com.alview.client.RestClient;
 import com.avlview.base.TestBase;
 import com.avlview.util.TestUtil;
 
-public class getvehicleoverviewURL extends TestBase {
+public class getAllDriverDispatchTasksTest extends TestBase {
 
 	TestBase testbase;
 	String serviceurl;
@@ -36,40 +39,57 @@ public class getvehicleoverviewURL extends TestBase {
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
-		apiurl = prop.getProperty("getvehicleoverviewURL");
+		apiurl = prop.getProperty("getAllDriverDispatchTasks");
 
 		url = serviceurl + apiurl;
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getAllDriverDispatchTasks() throws ClientProtocolException, IOException, SAXException,
+			ParserConfigurationException, URISyntaxException {
 
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-
-		headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
-		httpresponse = restclient.get(url, headers);
+		int firstIndex = serviceurl.indexOf(':');
+		String scheme = serviceurl.substring(0, firstIndex).trim();
+
+		int startIndex = url.indexOf("app");
+		int endIndex = url.indexOf("api");
+
+		String host = url.substring(startIndex, endIndex - 1);
+		String setpath = prop.getProperty("getAllDriverDispatchTasks");
+
+		URIBuilder builder = new URIBuilder();
+
+		builder.setScheme(scheme).setHost(host).setPath(setpath)
+				.setParameter("fromDateTime", prop.getProperty("fromDate"))
+				.setParameter("toDateTime", prop.getProperty("toDate"))
+				.setParameter("driverId", prop.getProperty("driverId"));
+
+		URI uri = builder.build();
+		System.out.println(uri);
+
+		httpresponse = restclient.getparameter(uri, headers);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
-		Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
+		System.out.println(statuscode);
 
 		responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
+
 		JSONObject responsejson = new JSONObject(responseString);
 
 		String status = TestUtil.getValueByJPath(responsejson, "/status");
-		Assert.assertEquals(status, "200");
+		int result = Integer.parseInt(status);
+		Assert.assertEquals(result, testbase.RESPONSE_STATUS_CODE_200);
 
-		String id = TestUtil.getValueByJPath(responsejson, "/vehicleoverview[0]/totalVehicles");
-		Assert.assertEquals(id, "22");
-
-		JSONArray DevicArray = responsejson.getJSONArray("vehicleoverview");
-		int cnt = DevicArray.length();
+		JSONArray vmodelArray = responsejson.getJSONArray("tasksList");
+		// System.out.println("values from devices: " + spellingsArray);
+		int cnt = vmodelArray.length();
 		System.out.println(cnt);
-		Assert.assertEquals(cnt, 1);
 
 		Header[] headersarray = httpresponse.getAllHeaders();
 		HashMap<String, String> allheaders = new HashMap<String, String>();

@@ -46,7 +46,8 @@ public class getdailysummaryreportTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void PostAPITest() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	public void getdailysummaryreport()
+			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 
@@ -55,8 +56,8 @@ public class getdailysummaryreportTest extends TestBase {
 		headers.put("apiKey", prop.getProperty("apiKey_Get"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
-		Getdailysummaryreport gdsr = new Getdailysummaryreport(prop.getProperty("Vehicleid"), prop.getProperty("st_dt"),
-				prop.getProperty("en_dt"));
+		Getdailysummaryreport gdsr = new Getdailysummaryreport(prop.getProperty("Vehicleid"),
+				prop.getProperty("st_dt_notime"), prop.getProperty("en_dt_notime"));
 
 		XmlMapper xmlMapper = new XmlMapper();
 		String destfilepath = System.getProperty("user.dir")

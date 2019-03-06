@@ -42,7 +42,7 @@ public class getvehiclesoutofnetworkTest extends TestBase {
 	}
 
 	@Test(enabled = true)
-	public void getAPITestWithHeaders()
+	public void getvehiclesoutofnetwork()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
