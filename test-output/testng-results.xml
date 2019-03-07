@@ -2,448 +2,448 @@
 <testng-results skipped="0" failed="1" ignored="0" total="57" passed="56">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="120887" started-at="2019-03-06T10:21:52Z" finished-at="2019-03-06T10:23:53Z">
+  <suite name="Suite" duration-ms="124488" started-at="2019-03-07T05:44:22Z" finished-at="2019-03-07T05:46:26Z">
     <groups>
     </groups>
-    <test name="Get Requests" duration-ms="87888" started-at="2019-03-06T10:21:52Z" finished-at="2019-03-06T10:23:20Z">
+    <test name="Get Requests" duration-ms="94068" started-at="2019-03-07T05:44:22Z" finished-at="2019-03-07T05:45:56Z">
       <class name="apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest@43fe0e]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:18Z" finished-at="2019-03-06T10:22:18Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest@43fe0e]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:52Z" finished-at="2019-03-07T05:44:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAllDriversDispatchModule()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest@43fe0e]" name="getAllDriversDispatchModule" duration-ms="707" started-at="2019-03-06T10:22:18Z" finished-at="2019-03-06T10:22:18Z">
+        <test-method status="PASS" signature="getAllDriversDispatchModule()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest@43fe0e]" name="getAllDriversDispatchModule" duration-ms="534" started-at="2019-03-07T05:44:52Z" finished-at="2019-03-07T05:44:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllDriversDispatchModule -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest -->
       <class name="apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest@b0bfab]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-06T10:22:09Z" finished-at="2019-03-06T10:22:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getDealerVehicleSnapshot()[pri:0, instance:apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest@b0bfab]" name="getDealerVehicleSnapshot" duration-ms="8019" started-at="2019-03-06T10:22:09Z" finished-at="2019-03-06T10:22:17Z">
+        <test-method status="PASS" signature="getDealerVehicleSnapshot()[pri:0, instance:apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest@b0bfab]" name="getDealerVehicleSnapshot" duration-ms="6830" started-at="2019-03-07T05:44:45Z" finished-at="2019-03-07T05:44:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getDealerVehicleSnapshot -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest@b0bfab]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:45Z" finished-at="2019-03-07T05:44:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest -->
       <class name="apitests.com.avlview.app.GETMethods.updateodometerTest">
-        <test-method status="PASS" signature="updateodometer()[pri:0, instance:apitests.com.avlview.app.GETMethods.updateodometerTest@1943d71]" name="updateodometer" duration-ms="60545" started-at="2019-03-06T10:22:19Z" finished-at="2019-03-06T10:23:20Z">
+        <test-method status="PASS" signature="updateodometer()[pri:0, instance:apitests.com.avlview.app.GETMethods.updateodometerTest@1943d71]" name="updateodometer" duration-ms="60648" started-at="2019-03-07T05:44:55Z" finished-at="2019-03-07T05:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateodometer -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.updateodometerTest@1943d71]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:19Z" finished-at="2019-03-06T10:22:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.updateodometerTest@1943d71]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:55Z" finished-at="2019-03-07T05:44:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.updateodometerTest -->
       <class name="apitests.com.avlview.app.GETMethods.getTransportationAlertsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getTransportationAlertsTest@feb982]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:07Z" finished-at="2019-03-06T10:22:07Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getTransportationAlertsTest@feb982]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:44:42Z" finished-at="2019-03-07T05:44:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getTransportationAlerts()[pri:0, instance:apitests.com.avlview.app.GETMethods.getTransportationAlertsTest@feb982]" name="getTransportationAlerts" duration-ms="951" started-at="2019-03-06T10:22:07Z" finished-at="2019-03-06T10:22:08Z">
+        <test-method status="PASS" signature="getTransportationAlerts()[pri:0, instance:apitests.com.avlview.app.GETMethods.getTransportationAlertsTest@feb982]" name="getTransportationAlerts" duration-ms="756" started-at="2019-03-07T05:44:42Z" finished-at="2019-03-07T05:44:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTransportationAlerts -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getTransportationAlertsTest -->
       <class name="apitests.com.avlview.app.GETMethods.getmovingvehiclesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getmovingvehiclesTest@a3107a]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-06T10:22:05Z" finished-at="2019-03-06T10:22:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getmovingvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getmovingvehiclesTest@a3107a]" name="getmovingvehicles" duration-ms="673" started-at="2019-03-06T10:22:05Z" finished-at="2019-03-06T10:22:06Z">
+        <test-method status="PASS" signature="getmovingvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getmovingvehiclesTest@a3107a]" name="getmovingvehicles" duration-ms="582" started-at="2019-03-07T05:44:40Z" finished-at="2019-03-07T05:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getmovingvehicles -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getmovingvehiclesTest -->
-      <class name="apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest@cd072c]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:21:58Z" finished-at="2019-03-06T10:21:58Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getmovingvehiclesTest@a3107a]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:40Z" finished-at="2019-03-07T05:44:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclesubscriptions()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest@cd072c]" name="getvehiclesubscriptions" duration-ms="2077" started-at="2019-03-06T10:21:58Z" finished-at="2019-03-06T10:22:00Z">
+      </class> <!-- apitests.com.avlview.app.GETMethods.getmovingvehiclesTest -->
+      <class name="apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest@cd072c]" name="setup" is-config="true" duration-ms="2" started-at="2019-03-07T05:44:31Z" finished-at="2019-03-07T05:44:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getvehiclesubscriptions()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest@cd072c]" name="getvehiclesubscriptions" duration-ms="2498" started-at="2019-03-07T05:44:31Z" finished-at="2019-03-07T05:44:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesubscriptions -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest -->
       <class name="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@765367]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:08Z" finished-at="2019-03-06T10:22:08Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@765367]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:43Z" finished-at="2019-03-07T05:44:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@765367]" name="getVehicleRawDetails" duration-ms="1193" started-at="2019-03-06T10:22:08Z" finished-at="2019-03-06T10:22:09Z">
+        <test-method status="PASS" signature="getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@765367]" name="getVehicleRawDetails" duration-ms="1777" started-at="2019-03-07T05:44:43Z" finished-at="2019-03-07T05:44:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getVehicleRawDetails -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest -->
       <class name="apitests.com.avlview.app.GETMethods.getdriversTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdriversTest@1438d26]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:21:57Z" finished-at="2019-03-06T10:21:57Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdriversTest@1438d26]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-07T05:44:30Z" finished-at="2019-03-07T05:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getdrivers()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdriversTest@1438d26]" name="getdrivers" duration-ms="805" started-at="2019-03-06T10:21:57Z" finished-at="2019-03-06T10:21:58Z">
+        <test-method status="PASS" signature="getdrivers()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdriversTest@1438d26]" name="getdrivers" duration-ms="1411" started-at="2019-03-07T05:44:30Z" finished-at="2019-03-07T05:44:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdrivers -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getdriversTest -->
       <class name="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest">
-        <test-method status="PASS" signature="getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@e67e0a]" name="getAllDriverDispatchTasks" duration-ms="587" started-at="2019-03-06T10:22:18Z" finished-at="2019-03-06T10:22:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@e67e0a]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:44:53Z" finished-at="2019-03-07T05:44:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@e67e0a]" name="getAllDriverDispatchTasks" duration-ms="740" started-at="2019-03-07T05:44:53Z" finished-at="2019-03-07T05:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllDriverDispatchTasks -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@e67e0a]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:18Z" finished-at="2019-03-06T10:22:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest@14c4973]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:06Z" finished-at="2019-03-06T10:22:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest@14c4973]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:41Z" finished-at="2019-03-07T05:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclesoutofnetwork()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest@14c4973]" name="getvehiclesoutofnetwork" duration-ms="592" started-at="2019-03-06T10:22:06Z" finished-at="2019-03-06T10:22:07Z">
+        <test-method status="PASS" signature="getvehiclesoutofnetwork()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest@14c4973]" name="getvehiclesoutofnetwork" duration-ms="909" started-at="2019-03-07T05:44:41Z" finished-at="2019-03-07T05:44:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesoutofnetwork -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest -->
       <class name="apitests.com.avlview.app.GETMethods.removeTaskTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@1d8db5a]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:19Z" finished-at="2019-03-06T10:22:19Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@1d8db5a]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:44:54Z" finished-at="2019-03-07T05:44:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@1d8db5a]" name="getAllDriverDispatchTasks" duration-ms="646" started-at="2019-03-06T10:22:19Z" finished-at="2019-03-06T10:22:19Z">
+        <test-method status="PASS" signature="getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@1d8db5a]" name="getAllDriverDispatchTasks" duration-ms="1595" started-at="2019-03-07T05:44:54Z" finished-at="2019-03-07T05:44:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAllDriverDispatchTasks -->
       </class> <!-- apitests.com.avlview.app.GETMethods.removeTaskTest -->
       <class name="apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest@1c7e1bb]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:06Z" finished-at="2019-03-06T10:22:06Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest@1c7e1bb]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:41Z" finished-at="2019-03-07T05:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getdisconnectedVehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest@1c7e1bb]" name="getdisconnectedVehicles" duration-ms="602" started-at="2019-03-06T10:22:06Z" finished-at="2019-03-06T10:22:06Z">
+        <test-method status="PASS" signature="getdisconnectedVehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest@1c7e1bb]" name="getdisconnectedVehicles" duration-ms="563" started-at="2019-03-07T05:44:41Z" finished-at="2019-03-07T05:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdisconnectedVehicles -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclegroupsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclegroupsTest@18c1321]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:21:56Z" finished-at="2019-03-06T10:21:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclegroups()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclegroupsTest@18c1321]" name="getvehiclegroups" duration-ms="541" started-at="2019-03-06T10:21:56Z" finished-at="2019-03-06T10:21:57Z">
+        <test-method status="PASS" signature="getvehiclegroups()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclegroupsTest@18c1321]" name="getvehiclegroups" duration-ms="546" started-at="2019-03-07T05:44:29Z" finished-at="2019-03-07T05:44:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclegroups -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclegroupsTest@18c1321]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:29Z" finished-at="2019-03-07T05:44:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclegroupsTest -->
       <class name="apitests.com.avlview.app.GETMethods.gettimezonesTest">
-        <test-method status="PASS" signature="gettimezones()[pri:0, instance:apitests.com.avlview.app.GETMethods.gettimezonesTest@5fd85d]" name="gettimezones" duration-ms="540" started-at="2019-03-06T10:21:56Z" finished-at="2019-03-06T10:21:56Z">
+        <test-method status="PASS" signature="gettimezones()[pri:0, instance:apitests.com.avlview.app.GETMethods.gettimezonesTest@5fd85d]" name="gettimezones" duration-ms="532" started-at="2019-03-07T05:44:29Z" finished-at="2019-03-07T05:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gettimezones -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.gettimezonesTest@5fd85d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:21:56Z" finished-at="2019-03-06T10:21:56Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.gettimezonesTest@5fd85d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:29Z" finished-at="2019-03-07T05:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.gettimezonesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@181e022]" name="setup" is-config="true" duration-ms="19" started-at="2019-03-06T10:21:52Z" finished-at="2019-03-06T10:21:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@181e022]" name="setup" is-config="true" duration-ms="67" started-at="2019-03-07T05:44:22Z" finished-at="2019-03-07T05:44:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@181e022]" name="getvehiclemakes" duration-ms="1593" started-at="2019-03-06T10:21:52Z" finished-at="2019-03-06T10:21:54Z">
+        <test-method status="PASS" signature="getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@181e022]" name="getvehiclemakes" duration-ms="4938" started-at="2019-03-07T05:44:22Z" finished-at="2019-03-07T05:44:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclemakes -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemakesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehicletypesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicletypesTest@77ab81]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:21:55Z" finished-at="2019-03-06T10:21:55Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicletypesTest@77ab81]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:28Z" finished-at="2019-03-07T05:44:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehicletypes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicletypesTest@77ab81]" name="getvehicletypes" duration-ms="549" started-at="2019-03-06T10:21:55Z" finished-at="2019-03-06T10:21:56Z">
+        <test-method status="PASS" signature="getvehicletypes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicletypesTest@77ab81]" name="getvehicletypes" duration-ms="544" started-at="2019-03-07T05:44:28Z" finished-at="2019-03-07T05:44:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehicletypes -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehicletypesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getorgunitsTest">
-        <test-method status="PASS" signature="getorgunits()[pri:0, instance:apitests.com.avlview.app.GETMethods.getorgunitsTest@1d677df]" name="getorgunits" duration-ms="529" started-at="2019-03-06T10:22:17Z" finished-at="2019-03-06T10:22:18Z">
+        <test-method status="PASS" signature="getorgunits()[pri:0, instance:apitests.com.avlview.app.GETMethods.getorgunitsTest@1d677df]" name="getorgunits" duration-ms="626" started-at="2019-03-07T05:44:52Z" finished-at="2019-03-07T05:44:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getorgunits -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getorgunitsTest@1d677df]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:17Z" finished-at="2019-03-06T10:22:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getorgunitsTest@1d677df]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:52Z" finished-at="2019-03-07T05:44:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getorgunitsTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest@1563da5]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:22:04Z" finished-at="2019-03-06T10:22:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest@1563da5]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:44:38Z" finished-at="2019-03-07T05:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclesnapshotinaccount()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest@1563da5]" name="getvehiclesnapshotinaccount" duration-ms="708" started-at="2019-03-06T10:22:04Z" finished-at="2019-03-06T10:22:04Z">
+        <test-method status="PASS" signature="getvehiclesnapshotinaccount()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest@1563da5]" name="getvehiclesnapshotinaccount" duration-ms="882" started-at="2019-03-07T05:44:38Z" finished-at="2019-03-07T05:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesnapshotinaccount -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest -->
       <class name="apitests.com.avlview.app.GETMethods.getdevicesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@32c52b]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:21:54Z" finished-at="2019-03-06T10:21:54Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@32c52b]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-07T05:44:28Z" finished-at="2019-03-07T05:44:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getdevices()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@32c52b]" name="getdevices" duration-ms="559" started-at="2019-03-06T10:21:54Z" finished-at="2019-03-06T10:21:55Z">
+        <test-method status="PASS" signature="getdevices()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@32c52b]" name="getdevices" duration-ms="624" started-at="2019-03-07T05:44:28Z" finished-at="2019-03-07T05:44:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdevices -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getdevicesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehicleoverviewTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicleoverviewTest@a1a8d5]" name="setup" is-config="true" duration-ms="8" started-at="2019-03-06T10:22:02Z" finished-at="2019-03-06T10:22:02Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicleoverviewTest@a1a8d5]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:36Z" finished-at="2019-03-07T05:44:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehicleoverview()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicleoverviewTest@a1a8d5]" name="getvehicleoverview" duration-ms="1881" started-at="2019-03-06T10:22:02Z" finished-at="2019-03-06T10:22:04Z">
+        <test-method status="PASS" signature="getvehicleoverview()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehicleoverviewTest@a1a8d5]" name="getvehicleoverview" duration-ms="1852" started-at="2019-03-07T05:44:36Z" finished-at="2019-03-07T05:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehicleoverview -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehicleoverviewTest -->
       <class name="apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest">
-        <test-method status="PASS" signature="getstoppedvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest@1bf4b8b]" name="getstoppedvehicles" duration-ms="654" started-at="2019-03-06T10:22:04Z" finished-at="2019-03-06T10:22:05Z">
+        <test-method status="PASS" signature="getstoppedvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest@1bf4b8b]" name="getstoppedvehicles" duration-ms="1038" started-at="2019-03-07T05:44:39Z" finished-at="2019-03-07T05:44:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstoppedvehicles -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest@1bf4b8b]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:04Z" finished-at="2019-03-06T10:22:04Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest@1bf4b8b]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:39Z" finished-at="2019-03-07T05:44:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@17e1b0c]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:21:54Z" finished-at="2019-03-06T10:21:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclemodels()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@17e1b0c]" name="getvehiclemodels" duration-ms="661" started-at="2019-03-06T10:21:54Z" finished-at="2019-03-06T10:21:54Z">
+        <test-method status="PASS" signature="getvehiclemodels()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@17e1b0c]" name="getvehiclemodels" duration-ms="621" started-at="2019-03-07T05:44:27Z" finished-at="2019-03-07T05:44:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclemodels -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@17e1b0c]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:27Z" finished-at="2019-03-07T05:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemodelsTest -->
       <class name="apitests.com.avlview.app.GETMethods.getavlcountrylistTest">
-        <test-method status="PASS" signature="getavlcountrylist()[pri:0, instance:apitests.com.avlview.app.GETMethods.getavlcountrylistTest@1ebcd8]" name="getavlcountrylist" duration-ms="834" started-at="2019-03-06T10:22:00Z" finished-at="2019-03-06T10:22:00Z">
+        <test-method status="PASS" signature="getavlcountrylist()[pri:0, instance:apitests.com.avlview.app.GETMethods.getavlcountrylistTest@1ebcd8]" name="getavlcountrylist" duration-ms="812" started-at="2019-03-07T05:44:34Z" finished-at="2019-03-07T05:44:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getavlcountrylist -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getavlcountrylistTest@1ebcd8]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:00Z" finished-at="2019-03-06T10:22:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getavlcountrylistTest@1ebcd8]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:34Z" finished-at="2019-03-07T05:44:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getavlcountrylistTest -->
       <class name="apitests.com.avlview.app.GETMethods.getplansTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getplansTest@1aeada1]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:00Z" finished-at="2019-03-06T10:22:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getplansTest@1aeada1]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:44:35Z" finished-at="2019-03-07T05:44:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getplans()[pri:0, instance:apitests.com.avlview.app.GETMethods.getplansTest@1aeada1]" name="getplans" duration-ms="539" started-at="2019-03-06T10:22:00Z" finished-at="2019-03-06T10:22:01Z">
+        <test-method status="PASS" signature="getplans()[pri:0, instance:apitests.com.avlview.app.GETMethods.getplansTest@1aeada1]" name="getplans" duration-ms="875" started-at="2019-03-07T05:44:35Z" finished-at="2019-03-07T05:44:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getplans -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getplansTest -->
       <class name="apitests.com.avlview.app.GETMethods.getvehiclesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesTest@8931cf]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:22:01Z" finished-at="2019-03-06T10:22:01Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesTest@8931cf]" name="setup" is-config="true" duration-ms="2" started-at="2019-03-07T05:44:36Z" finished-at="2019-03-07T05:44:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesTest@8931cf]" name="getvehicles" duration-ms="707" started-at="2019-03-06T10:22:01Z" finished-at="2019-03-06T10:22:02Z">
+        <test-method status="PASS" signature="getvehicles()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclesTest@8931cf]" name="getvehicles" duration-ms="812" started-at="2019-03-07T05:44:36Z" finished-at="2019-03-07T05:44:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehicles -->
       </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclesTest -->
     </test> <!-- Get Requests -->
-    <test name="Post Requests" duration-ms="32908" started-at="2019-03-06T10:23:20Z" finished-at="2019-03-06T10:23:53Z">
+    <test name="Post Requests" duration-ms="30053" started-at="2019-03-07T05:45:56Z" finished-at="2019-03-07T05:46:26Z">
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest">
-        <test-method status="PASS" signature="getvehiclesnapshot()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest@38d7a3]" name="getvehiclesnapshot" duration-ms="550" started-at="2019-03-06T10:23:26Z" finished-at="2019-03-06T10:23:26Z">
+        <test-method status="PASS" signature="getvehiclesnapshot()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest@38d7a3]" name="getvehiclesnapshot" duration-ms="576" started-at="2019-03-07T05:46:04Z" finished-at="2019-03-07T05:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesnapshot -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest@38d7a3]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:26Z" finished-at="2019-03-06T10:23:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest@38d7a3]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:04Z" finished-at="2019-03-07T05:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest">
-        <test-method status="PASS" signature="getdailysummaryreport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest@720b71]" name="getdailysummaryreport" duration-ms="4435" started-at="2019-03-06T10:23:36Z" finished-at="2019-03-06T10:23:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest@720b71]" name="setup" is-config="true" duration-ms="2" started-at="2019-03-07T05:46:16Z" finished-at="2019-03-07T05:46:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getdailysummaryreport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest@720b71]" name="getdailysummaryreport" duration-ms="1289" started-at="2019-03-07T05:46:16Z" finished-at="2019-03-07T05:46:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdailysummaryreport -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest@720b71]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:36Z" finished-at="2019-03-06T10:23:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest -->
       <class name="apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest@d1af89]" name="setup" is-config="true" duration-ms="3" started-at="2019-03-06T10:23:52Z" finished-at="2019-03-06T10:23:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest@d1af89]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:25Z" finished-at="2019-03-07T05:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createDriverDispatchTask()[pri:0, instance:apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest@d1af89]" name="createDriverDispatchTask" duration-ms="801" started-at="2019-03-06T10:23:52Z" finished-at="2019-03-06T10:23:52Z">
+        <test-method status="PASS" signature="createDriverDispatchTask()[pri:0, instance:apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest@d1af89]" name="createDriverDispatchTask" duration-ms="746" started-at="2019-03-07T05:46:25Z" finished-at="2019-03-07T05:46:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriverDispatchTask -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest -->
       <class name="apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest@1aab78]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:45Z" finished-at="2019-03-06T10:23:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest@1aab78]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:21Z" finished-at="2019-03-07T05:46:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="gettripdetailsSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest@1aab78]" name="gettripdetailsSG" duration-ms="2433" started-at="2019-03-06T10:23:45Z" finished-at="2019-03-06T10:23:48Z">
+        <test-method status="PASS" signature="gettripdetailsSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest@1aab78]" name="gettripdetailsSG" duration-ms="1550" started-at="2019-03-07T05:46:21Z" finished-at="2019-03-07T05:46:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gettripdetailsSG -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest@7f383f]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:31Z" finished-at="2019-03-06T10:23:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest@7f383f]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:10Z" finished-at="2019-03-07T05:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getnearbyvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest@7f383f]" name="getnearbyvehiclesbyplan" duration-ms="995" started-at="2019-03-06T10:23:31Z" finished-at="2019-03-06T10:23:32Z">
+        <test-method status="PASS" signature="getnearbyvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest@7f383f]" name="getnearbyvehiclesbyplan" duration-ms="588" started-at="2019-03-07T05:46:10Z" finished-at="2019-03-07T05:46:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getnearbyvehiclesbyplan -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest@121c9d6]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:31Z" finished-at="2019-03-06T10:23:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest@121c9d6]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:09Z" finished-at="2019-03-07T05:46:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getnearbyvehicles()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest@121c9d6]" name="getnearbyvehicles" duration-ms="591" started-at="2019-03-06T10:23:31Z" finished-at="2019-03-06T10:23:31Z">
+        <test-method status="PASS" signature="getnearbyvehicles()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest@121c9d6]" name="getnearbyvehicles" duration-ms="961" started-at="2019-03-07T05:46:09Z" finished-at="2019-03-07T05:46:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getnearbyvehicles -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest">
-        <test-method status="PASS" signature="getvehicleoverviewbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest@1ec78b9]" name="getvehicleoverviewbyplan" duration-ms="1777" started-at="2019-03-06T10:23:23Z" finished-at="2019-03-06T10:23:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest@1ec78b9]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:02Z" finished-at="2019-03-07T05:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getvehicleoverviewbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest@1ec78b9]" name="getvehicleoverviewbyplan" duration-ms="1778" started-at="2019-03-07T05:46:02Z" finished-at="2019-03-07T05:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehicleoverviewbyplan -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest@1ec78b9]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:23Z" finished-at="2019-03-06T10:23:23Z">
+      </class> <!-- apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.addorgunitTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@87761d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:24Z" finished-at="2019-03-07T05:46:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest -->
-      <class name="apitests.com.avlview.app.POSTMethods.addorgunitTest">
-        <test-method status="PASS" signature="addorgunit()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@87761d]" name="addorgunit" duration-ms="706" started-at="2019-03-06T10:23:51Z" finished-at="2019-03-06T10:23:52Z">
+        <test-method status="PASS" signature="addorgunit()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@87761d]" name="addorgunit" duration-ms="617" started-at="2019-03-07T05:46:24Z" finished-at="2019-03-07T05:46:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addorgunit -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addorgunitTest@87761d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:51Z" finished-at="2019-03-06T10:23:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.addorgunitTest -->
       <class name="apitests.com.avlview.app.POSTMethods.adddriverTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.adddriverTest@1b0fd6f]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:48Z" finished-at="2019-03-06T10:23:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="adddriver()[pri:0, instance:apitests.com.avlview.app.POSTMethods.adddriverTest@1b0fd6f]" name="adddriver" duration-ms="2023" started-at="2019-03-06T10:23:48Z" finished-at="2019-03-06T10:23:50Z">
+        <test-method status="PASS" signature="adddriver()[pri:0, instance:apitests.com.avlview.app.POSTMethods.adddriverTest@1b0fd6f]" name="adddriver" duration-ms="618" started-at="2019-03-07T05:46:23Z" finished-at="2019-03-07T05:46:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- adddriver -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.adddriverTest -->
-      <class name="apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest">
-        <test-method status="PASS" signature="getvehiclesoutofnetworkbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest@eaafa6]" name="getvehiclesoutofnetworkbyplan" duration-ms="664" started-at="2019-03-06T10:23:28Z" finished-at="2019-03-06T10:23:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getvehiclesoutofnetworkbyplan -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest@eaafa6]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:28Z" finished-at="2019-03-06T10:23:28Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.adddriverTest@1b0fd6f]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:23Z" finished-at="2019-03-07T05:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+      </class> <!-- apitests.com.avlview.app.POSTMethods.adddriverTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest@eaafa6]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-07T05:46:06Z" finished-at="2019-03-07T05:46:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getvehiclesoutofnetworkbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest@eaafa6]" name="getvehiclesoutofnetworkbyplan" duration-ms="647" started-at="2019-03-07T05:46:06Z" finished-at="2019-03-07T05:46:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getvehiclesoutofnetworkbyplan -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest">
-        <test-method status="PASS" signature="getvehiclesnapshotbydate()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest@13167f4]" name="getvehiclesnapshotbydate" duration-ms="643" started-at="2019-03-06T10:23:29Z" finished-at="2019-03-06T10:23:30Z">
+        <test-method status="PASS" signature="getvehiclesnapshotbydate()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest@13167f4]" name="getvehiclesnapshotbydate" duration-ms="582" started-at="2019-03-07T05:46:08Z" finished-at="2019-03-07T05:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesnapshotbydate -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest@13167f4]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:29Z" finished-at="2019-03-06T10:23:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest@13167f4]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:08Z" finished-at="2019-03-07T05:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest@1440df3]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:27Z" finished-at="2019-03-06T10:23:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest@1440df3]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-07T05:46:05Z" finished-at="2019-03-07T05:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getmovingvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest@1440df3]" name="getmovingvehiclesbyplan" duration-ms="574" started-at="2019-03-06T10:23:27Z" finished-at="2019-03-06T10:23:28Z">
+        <test-method status="PASS" signature="getmovingvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest@1440df3]" name="getmovingvehiclesbyplan" duration-ms="606" started-at="2019-03-07T05:46:05Z" finished-at="2019-03-07T05:46:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getmovingvehiclesbyplan -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest@3d45bd]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:22Z" finished-at="2019-03-06T10:23:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest@3d45bd]" name="getvehiclesbyplan" duration-ms="615" started-at="2019-03-06T10:23:22Z" finished-at="2019-03-06T10:23:23Z">
+        <test-method status="PASS" signature="getvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest@3d45bd]" name="getvehiclesbyplan" duration-ms="689" started-at="2019-03-07T05:46:01Z" finished-at="2019-03-07T05:46:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesbyplan -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest -->
-      <class name="apitests.com.avlview.app.POSTMethods.getidlereportTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getidlereportTest@1758f2a]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:36Z" finished-at="2019-03-06T10:23:36Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest@3d45bd]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:01Z" finished-at="2019-03-07T05:46:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getidlereport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getidlereportTest@1758f2a]" name="getidlereport" duration-ms="546" started-at="2019-03-06T10:23:36Z" finished-at="2019-03-06T10:23:36Z">
+      </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.getidlereportTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getidlereportTest@1758f2a]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-07T05:46:14Z" finished-at="2019-03-07T05:46:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getidlereport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getidlereportTest@1758f2a]" name="getidlereport" duration-ms="1808" started-at="2019-03-07T05:46:14Z" finished-at="2019-03-07T05:46:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getidlereport -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getidlereportTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest@afc191]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:33Z" finished-at="2019-03-06T10:23:33Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest@afc191]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:11Z" finished-at="2019-03-07T05:46:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclesnapshotinaccountSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest@afc191]" name="getvehiclesnapshotinaccountSG" duration-ms="554" started-at="2019-03-06T10:23:33Z" finished-at="2019-03-06T10:23:33Z">
+        <test-method status="PASS" signature="getvehiclesnapshotinaccountSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest@afc191]" name="getvehiclesnapshotinaccountSG" duration-ms="1157" started-at="2019-03-07T05:46:11Z" finished-at="2019-03-07T05:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclesnapshotinaccountSG -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest">
-        <test-method status="PASS" signature="getstoppagedetails()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest@b7f003]" name="getstoppagedetails" duration-ms="549" started-at="2019-03-06T10:23:32Z" finished-at="2019-03-06T10:23:33Z">
+        <test-method status="PASS" signature="getstoppagedetails()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest@b7f003]" name="getstoppagedetails" duration-ms="562" started-at="2019-03-07T05:46:11Z" finished-at="2019-03-07T05:46:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstoppagedetails -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest@b7f003]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:32Z" finished-at="2019-03-06T10:23:32Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest@b7f003]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:11Z" finished-at="2019-03-07T05:46:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getAlertDetailTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getAlertDetailTest@60b431]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:34Z" finished-at="2019-03-06T10:23:34Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getAlertDetailTest@60b431]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:13Z" finished-at="2019-03-07T05:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getAlertDetail()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getAlertDetailTest@60b431]" name="getAlertDetail" duration-ms="936" started-at="2019-03-06T10:23:34Z" finished-at="2019-03-06T10:23:35Z">
+        <test-method status="PASS" signature="getAlertDetail()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getAlertDetailTest@60b431]" name="getAlertDetail" duration-ms="758" started-at="2019-03-07T05:46:13Z" finished-at="2019-03-07T05:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAlertDetail -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getAlertDetailTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest">
-        <test-method status="PASS" signature="getvehiclehistory()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest@d9d034]" name="getvehiclehistory" duration-ms="744" started-at="2019-03-06T10:23:30Z" finished-at="2019-03-06T10:23:31Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest@d9d034]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:08Z" finished-at="2019-03-07T05:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getvehiclehistory()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest@d9d034]" name="getvehiclehistory" duration-ms="956" started-at="2019-03-07T05:46:08Z" finished-at="2019-03-07T05:46:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclehistory -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest@d9d034]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:30Z" finished-at="2019-03-06T10:23:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest -->
       <class name="apitests.com.avlview.app.POSTMethods.addvehicleTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addvehicleTest@646db9]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:52Z" finished-at="2019-03-06T10:23:52Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addvehicleTest@646db9]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:26Z" finished-at="2019-03-07T05:46:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="addvehicle()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addvehicleTest@646db9]" name="addvehicle" duration-ms="547" started-at="2019-03-06T10:23:52Z" finished-at="2019-03-06T10:23:53Z">
+        <test-method status="FAIL" signature="addvehicle()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addvehicleTest@646db9]" name="addvehicle" duration-ms="578" started-at="2019-03-07T05:46:26Z" finished-at="2019-03-07T05:46:26Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [200] but found [500]]]>
@@ -490,131 +490,131 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- addvehicle -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.addvehicleTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest">
-        <test-method status="PASS" signature="getdisconnectedvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest@a3e297]" name="getdisconnectedvehiclesbyplan" duration-ms="622" started-at="2019-03-06T10:23:29Z" finished-at="2019-03-06T10:23:29Z">
+        <test-method status="PASS" signature="getdisconnectedvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest@a3e297]" name="getdisconnectedvehiclesbyplan" duration-ms="961" started-at="2019-03-07T05:46:07Z" finished-at="2019-03-07T05:46:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getdisconnectedvehiclesbyplan -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest@a3e297]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:29Z" finished-at="2019-03-06T10:23:29Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest@a3e297]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:07Z" finished-at="2019-03-07T05:46:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest@ad1f1f]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:45Z" finished-at="2019-03-06T10:23:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest@ad1f1f]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:20Z" finished-at="2019-03-07T05:46:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getactivevehiclesnapshotinaccountSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest@ad1f1f]" name="getactivevehiclesnapshotinaccountSG" duration-ms="571" started-at="2019-03-06T10:23:45Z" finished-at="2019-03-06T10:23:45Z">
+        <test-method status="PASS" signature="getactivevehiclesnapshotinaccountSG()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest@ad1f1f]" name="getactivevehiclesnapshotinaccountSG" duration-ms="950" started-at="2019-03-07T05:46:20Z" finished-at="2019-03-07T05:46:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getactivevehiclesnapshotinaccountSG -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getTripDetailsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getTripDetailsTest@12679d6]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:35Z" finished-at="2019-03-06T10:23:35Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getTripDetailsTest@12679d6]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:14Z" finished-at="2019-03-07T05:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getTripDetails()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getTripDetailsTest@12679d6]" name="getTripDetails" duration-ms="613" started-at="2019-03-06T10:23:35Z" finished-at="2019-03-06T10:23:36Z">
+        <test-method status="PASS" signature="getTripDetails()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getTripDetailsTest@12679d6]" name="getTripDetails" duration-ms="642" started-at="2019-03-07T05:46:14Z" finished-at="2019-03-07T05:46:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTripDetails -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getTripDetailsTest -->
       <class name="apitests.com.avlview.app.POSTMethods.addgroupTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addgroupTest@2d5aee]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:48Z" finished-at="2019-03-06T10:23:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addgroup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addgroupTest@2d5aee]" name="addgroup" duration-ms="651" started-at="2019-03-06T10:23:48Z" finished-at="2019-03-06T10:23:48Z">
+        <test-method status="PASS" signature="addgroup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addgroupTest@2d5aee]" name="addgroup" duration-ms="599" started-at="2019-03-07T05:46:22Z" finished-at="2019-03-07T05:46:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addgroup -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.addgroupTest -->
-      <class name="apitests.com.avlview.app.POSTMethods.saveFenceZoneTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.saveFenceZoneTest@17942a1]" name="setup" is-config="true" duration-ms="1" started-at="2019-03-06T10:23:50Z" finished-at="2019-03-06T10:23:50Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.addgroupTest@2d5aee]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:22Z" finished-at="2019-03-07T05:46:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="saveFenceZone()[pri:0, instance:apitests.com.avlview.app.POSTMethods.saveFenceZoneTest@17942a1]" name="saveFenceZone" duration-ms="549" started-at="2019-03-06T10:23:50Z" finished-at="2019-03-06T10:23:51Z">
+      </class> <!-- apitests.com.avlview.app.POSTMethods.addgroupTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.saveFenceZoneTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.saveFenceZoneTest@17942a1]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:24Z" finished-at="2019-03-07T05:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="saveFenceZone()[pri:0, instance:apitests.com.avlview.app.POSTMethods.saveFenceZoneTest@17942a1]" name="saveFenceZone" duration-ms="647" started-at="2019-03-07T05:46:24Z" finished-at="2019-03-07T05:46:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveFenceZone -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.saveFenceZoneTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest@7c7811]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-06T10:23:23Z" finished-at="2019-03-06T10:23:23Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest@7c7811]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:01Z" finished-at="2019-03-07T05:46:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclecurrentlocation()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest@7c7811]" name="getvehiclecurrentlocation" duration-ms="554" started-at="2019-03-06T10:23:23Z" finished-at="2019-03-06T10:23:23Z">
+        <test-method status="PASS" signature="getvehiclecurrentlocation()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest@7c7811]" name="getvehiclecurrentlocation" duration-ms="564" started-at="2019-03-07T05:46:01Z" finished-at="2019-03-07T05:46:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getvehiclecurrentlocation -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest">
-        <test-method status="PASS" signature="getvehiclesnapshotinaccountbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest@3869f4]" name="getvehiclesnapshotinaccountbyplan" duration-ms="619" started-at="2019-03-06T10:23:25Z" finished-at="2019-03-06T10:23:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getvehiclesnapshotinaccountbyplan -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest@3869f4]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:25Z" finished-at="2019-03-06T10:23:25Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest@3869f4]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:04Z" finished-at="2019-03-07T05:46:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getvehiclesnapshotinaccountbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest@3869f4]" name="getvehiclesnapshotinaccountbyplan" duration-ms="583" started-at="2019-03-07T05:46:04Z" finished-at="2019-03-07T05:46:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getvehiclesnapshotinaccountbyplan -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest">
-        <test-method status="PASS" signature="getapnlistbyvehicleid()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest@10d0686]" name="getapnlistbyvehicleid" duration-ms="689" started-at="2019-03-06T10:23:21Z" finished-at="2019-03-06T10:23:22Z">
+        <test-method status="PASS" signature="getapnlistbyvehicleid()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest@10d0686]" name="getapnlistbyvehicleid" duration-ms="601" started-at="2019-03-07T05:46:00Z" finished-at="2019-03-07T05:46:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getapnlistbyvehicleid -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest@10d0686]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:21Z" finished-at="2019-03-06T10:23:21Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest@10d0686]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:00Z" finished-at="2019-03-07T05:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest@1f99a05]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:26Z" finished-at="2019-03-06T10:23:26Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest@1f99a05]" name="setup" is-config="true" duration-ms="4" started-at="2019-03-07T05:46:05Z" finished-at="2019-03-07T05:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getstoppedvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest@1f99a05]" name="getstoppedvehiclesbyplan" duration-ms="1187" started-at="2019-03-06T10:23:26Z" finished-at="2019-03-06T10:23:27Z">
+        <test-method status="PASS" signature="getstoppedvehiclesbyplan()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest@1f99a05]" name="getstoppedvehiclesbyplan" duration-ms="622" started-at="2019-03-07T05:46:05Z" finished-at="2019-03-07T05:46:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getstoppedvehiclesbyplan -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getWaypointsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getWaypointsTest@12fc6eb]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:33Z" finished-at="2019-03-06T10:23:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getWaypoints()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getWaypointsTest@12fc6eb]" name="getWaypoints" duration-ms="533" started-at="2019-03-06T10:23:33Z" finished-at="2019-03-06T10:23:34Z">
+        <test-method status="PASS" signature="getWaypoints()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getWaypointsTest@12fc6eb]" name="getWaypoints" duration-ms="540" started-at="2019-03-07T05:46:12Z" finished-at="2019-03-07T05:46:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getWaypoints -->
-      </class> <!-- apitests.com.avlview.app.POSTMethods.getWaypointsTest -->
-      <class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@126f7b2]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:41Z" finished-at="2019-03-06T10:23:41Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getWaypointsTest@12fc6eb]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:12Z" finished-at="2019-03-07T05:46:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getSummaryReport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@126f7b2]" name="getSummaryReport" duration-ms="2902" started-at="2019-03-06T10:23:41Z" finished-at="2019-03-06T10:23:43Z">
+      </class> <!-- apitests.com.avlview.app.POSTMethods.getWaypointsTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest">
+        <test-method status="PASS" signature="getSummaryReport()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@126f7b2]" name="getSummaryReport" duration-ms="1287" started-at="2019-03-07T05:46:17Z" finished-at="2019-03-07T05:46:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSummaryReport -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getSummaryReportTest@126f7b2]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:17Z" finished-at="2019-03-07T05:46:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getSummaryReportTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest">
-        <test-method status="PASS" signature="getRawDataInTimeRange()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest@11cc5c9]" name="getRawDataInTimeRange" duration-ms="1278" started-at="2019-03-06T10:23:43Z" finished-at="2019-03-06T10:23:45Z">
+        <test-method status="PASS" signature="getRawDataInTimeRange()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest@11cc5c9]" name="getRawDataInTimeRange" duration-ms="1141" started-at="2019-03-07T05:46:19Z" finished-at="2019-03-07T05:46:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getRawDataInTimeRange -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest@11cc5c9]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:43Z" finished-at="2019-03-06T10:23:43Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest@11cc5c9]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:46:19Z" finished-at="2019-03-07T05:46:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
       </class> <!-- apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest -->
       <class name="apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest">
-        <test-method status="PASS" signature="getapnlistbycountryid()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest@1ed828d]" name="getapnlistbycountryid" duration-ms="1317" started-at="2019-03-06T10:23:20Z" finished-at="2019-03-06T10:23:21Z">
+        <test-method status="PASS" signature="getapnlistbycountryid()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest@1ed828d]" name="getapnlistbycountryid" duration-ms="3683" started-at="2019-03-07T05:45:56Z" finished-at="2019-03-07T05:46:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getapnlistbycountryid -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest@1ed828d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-06T10:23:20Z" finished-at="2019-03-06T10:23:20Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest@1ed828d]" name="setup" is-config="true" duration-ms="0" started-at="2019-03-07T05:45:56Z" finished-at="2019-03-07T05:45:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
