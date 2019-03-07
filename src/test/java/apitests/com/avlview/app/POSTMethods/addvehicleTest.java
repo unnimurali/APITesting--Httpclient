@@ -42,7 +42,7 @@ public class addvehicleTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void addvehicle() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
