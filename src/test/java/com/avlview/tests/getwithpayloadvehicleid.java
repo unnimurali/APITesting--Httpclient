@@ -47,7 +47,7 @@ public class getwithpayloadvehicleid extends TestBase {
 		System.out.println(geturl);
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getAPITestWithHeaders()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

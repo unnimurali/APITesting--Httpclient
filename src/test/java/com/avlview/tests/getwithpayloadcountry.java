@@ -52,7 +52,7 @@ public class getwithpayloadcountry extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getAPITestWithHeaders()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

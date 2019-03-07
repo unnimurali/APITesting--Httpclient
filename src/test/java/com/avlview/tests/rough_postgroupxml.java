@@ -53,7 +53,7 @@ public class rough_postgroupxml extends TestBase {
 		geturl = serviceurl + apigeturl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getAPITestWithHeaders()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

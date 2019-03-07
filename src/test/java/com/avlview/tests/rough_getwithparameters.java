@@ -48,7 +48,7 @@ public class rough_getwithparameters extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getAPITestWithHeaders() throws ClientProtocolException, IOException, SAXException,
 			ParserConfigurationException, URISyntaxException {
 

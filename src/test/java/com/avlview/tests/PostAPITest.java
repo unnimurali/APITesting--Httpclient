@@ -19,9 +19,7 @@ import org.xml.sax.SAXException;
 import com.alview.client.RestClient;
 import com.avlview.base.TestBase;
 import com.avlview.data.users;
-import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class PostAPITest extends TestBase {
@@ -47,7 +45,7 @@ public class PostAPITest extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void posAPITestWithHeaders()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
@@ -61,7 +59,7 @@ public class PostAPITest extends TestBase {
 
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-		
+
 		mapper.writeValue(new File(
 				"D:/Learning/Selenium/AVLView.com/Partner Portal/com.avlview.restapitest/src/main/java/com/avlview/data/users.json"),
 				usr);

@@ -1,8 +1,5 @@
 package com.avlview.tests;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
-
 import java.io.IOException;
 import java.util.HashMap;
 
@@ -37,7 +34,7 @@ public class rough_getgroupxml extends TestBase {
 	public static int PRETTY_PRINT_INDENT_FACTOR = 4;
 	String jsonPrettyPrintString;
 	JSONObject xmlJSONObj;
-	boolean exist=false;
+	boolean exist = false;
 
 	@BeforeMethod
 	public void setup() {
@@ -48,7 +45,7 @@ public class rough_getgroupxml extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void getAPITestWithHeaders()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
@@ -60,59 +57,55 @@ public class rough_getgroupxml extends TestBase {
 
 		httpresponse = restclient.get(url, headers);
 		System.out.println(httpresponse);
-		//System.out.println(headers);
+		// System.out.println(headers);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();
-		//System.out.println(statuscode);
+		// System.out.println(statuscode);
 		Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
 		String responseString = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
-		//System.out.println(responseString);
+		// System.out.println(responseString);
 
 		String str2 = responseString.replace("<vehiclegroups>", "").replace("</vehiclegroups>", "");
-		//System.out.println(str2);
+		// System.out.println(str2);
 
 		try {
 			xmlJSONObj = XML.toJSONObject(str2);
 			jsonPrettyPrintString = xmlJSONObj.toString(PRETTY_PRINT_INDENT_FACTOR);
-			//System.out.println(jsonPrettyPrintString);
+			// System.out.println(jsonPrettyPrintString);
 		} catch (JSONException je) {
 			System.out.println(je.toString());
 		}
 
 		JSONObject responsejson = new JSONObject(jsonPrettyPrintString);
-		//System.out.println(responsejson);
+		// System.out.println(responsejson);
 
-		 
-		 String status = TestUtil.getValueByJPath(responsejson, "/status");
+		String status = TestUtil.getValueByJPath(responsejson, "/status");
 		// System.out.println(status);
-		 Assert.assertEquals(status, "200");
+		Assert.assertEquals(status, "200");
 
-		 String id = TestUtil.getValueByJPath(responsejson,"/vgroup[1]/groupId");
+		String id = TestUtil.getValueByJPath(responsejson, "/vgroup[1]/groupId");
 		// System.out.println(id);
-		 
-		 String devicename = TestUtil.getValueByJPath(responsejson,"/vgroup[1]/groupName");
+
+		String devicename = TestUtil.getValueByJPath(responsejson, "/vgroup[1]/groupName");
 		// System.out.println(devicename);
-		 
-		 JSONArray DevicArray = responsejson.getJSONArray("vgroup");
-		//System.out.println("values from devices: " + spellingsArray);
-		 System.out.println(DevicArray.length());
-		
-		 
-		 for(int i=0; i<DevicArray.length(); i++) {
-			   JSONObject item = DevicArray.getJSONObject(i);  //gets the ith Json object of JSONArray
-			   String customerId = item.getString("groupName");
-			   System.out.println(customerId);
-			   if(customerId.equals("httpclient"))
-			   {
-				   exist=true;
-				   break;
-			   }
+
+		JSONArray DevicArray = responsejson.getJSONArray("vgroup");
+		// System.out.println("values from devices: " + spellingsArray);
+		System.out.println(DevicArray.length());
+
+		for (int i = 0; i < DevicArray.length(); i++) {
+			JSONObject item = DevicArray.getJSONObject(i); // gets the ith Json object of JSONArray
+			String customerId = item.getString("groupName");
+			System.out.println(customerId);
+			if (customerId.equals("httpclient")) {
+				exist = true;
+				break;
 			}
-		 
-		 Assert.assertTrue(exist);
-		 
-		 
+		}
+
+		Assert.assertTrue(exist);
+
 		// String id = TestUtil.getValueByJPath(responsejson, "/device[0]/deviceId");
 		// String devicename = TestUtil.getValueByJPath(responsejson,
 		// "/device[0]/deviceName");
@@ -132,7 +125,7 @@ public class rough_getgroupxml extends TestBase {
 
 		}
 
-		//System.out.println(allheaders);
+		// System.out.println(allheaders);
 
 	}
 
