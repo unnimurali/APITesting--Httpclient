@@ -40,7 +40,7 @@ public class removeTaskTest extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = false, groups = { "GetRequests" })
+	@Test(enabled = true, groups = { "GetRequests" })
 	public void getAllDriverDispatchTasks() throws ClientProtocolException, IOException, SAXException,
 			ParserConfigurationException, URISyntaxException {
 
