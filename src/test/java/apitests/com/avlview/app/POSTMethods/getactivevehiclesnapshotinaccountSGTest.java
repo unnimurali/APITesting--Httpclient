@@ -30,7 +30,7 @@ public class getactivevehiclesnapshotinaccountSGTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -42,7 +42,7 @@ public class getactivevehiclesnapshotinaccountSGTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void getactivevehiclesnapshotinaccountSG()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

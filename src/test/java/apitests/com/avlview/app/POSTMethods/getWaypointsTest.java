@@ -30,7 +30,7 @@ public class getWaypointsTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -42,7 +42,7 @@ public class getWaypointsTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void getWaypoints() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
@@ -59,7 +59,7 @@ public class getWaypointsTest extends TestBase {
 		Assert.assertEquals(statuscode, testbase.RESPONSE_STATUS_CODE_200);
 
 		String responseStringpost = EntityUtils.toString(httpresponse.getEntity(), "UTF-8");
-		System.out.println(responseStringpost);
+		// System.out.println(responseStringpost);
 		JSONObject responsejson = new JSONObject(responseStringpost);
 
 		String status = TestUtil.getValueByJPath(responsejson, "/status");

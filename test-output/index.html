@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">57 methods, 1 failed,   56 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitests.com.avlview.app.POSTMethods.addvehicleTest" hash-for-method="addvehicle">addvehicle</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">56 methods,   56 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -142,11 +128,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest" hash-for-method="getAllDriverDispatchTasks">getAllDriverDispatchTasks</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitests.com.avlview.app.GETMethods.removeTaskTest" hash-for-method="getAllDriverDispatchTasks">getAllDriverDispatchTasks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -311,6 +292,11 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest" hash-for-method="getvehiclehistorySG">getvehiclehistorySG</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="apitests.com.avlview.app.GETMethods.getvehiclemakesTest" hash-for-method="getvehiclemakes">getvehiclemakes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -406,36 +392,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.addvehicleTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addvehicle">
-                  </a> <!-- addvehicle -->
-                  <span class="method-name">addvehicle</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [200] but found [500]
-	at apitests.com.avlview.app.POSTMethods.addvehicleTest.addvehicle(addvehicleTest.java:74)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest</span>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getAllDriverDispatchTasks">
-                  </a> <!-- getAllDriverDispatchTasks -->
-                  <span class="method-name">getAllDriverDispatchTasks</span>
+                  <a name="getvehiclesoutofnetwork">
+                  </a> <!-- getvehiclesoutofnetwork -->
+                  <span class="method-name">getvehiclesoutofnetwork</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -443,734 +410,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getSummaryReportTest</span>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getSummaryReport">
-                  </a> <!-- getSummaryReport -->
-                  <span class="method-name">getSummaryReport</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesnapshotinaccountSG">
-                  </a> <!-- getvehiclesnapshotinaccountSG -->
-                  <span class="method-name">getvehiclesnapshotinaccountSG</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getactivevehiclesnapshotinaccountSG">
-                  </a> <!-- getactivevehiclesnapshotinaccountSG -->
-                  <span class="method-name">getactivevehiclesnapshotinaccountSG</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getapnlistbycountryid">
-                  </a> <!-- getapnlistbycountryid -->
-                  <span class="method-name">getapnlistbycountryid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getdisconnectedvehiclesbyplan">
-                  </a> <!-- getdisconnectedvehiclesbyplan -->
-                  <span class="method-name">getdisconnectedvehiclesbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.gettimezonesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="gettimezones">
-                  </a> <!-- gettimezones -->
-                  <span class="method-name">gettimezones</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getorgunitsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getorgunits">
-                  </a> <!-- getorgunits -->
-                  <span class="method-name">getorgunits</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.addorgunitTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addorgunit">
-                  </a> <!-- addorgunit -->
-                  <span class="method-name">addorgunit</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getdisconnectedVehicles">
-                  </a> <!-- getdisconnectedVehicles -->
-                  <span class="method-name">getdisconnectedVehicles</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getWaypointsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getWaypoints">
-                  </a> <!-- getWaypoints -->
-                  <span class="method-name">getWaypoints</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.removeTaskTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAllDriverDispatchTasks">
-                  </a> <!-- getAllDriverDispatchTasks -->
-                  <span class="method-name">getAllDriverDispatchTasks</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.adddriverTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="adddriver">
-                  </a> <!-- adddriver -->
-                  <span class="method-name">adddriver</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getAlertDetailTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getAlertDetail">
-                  </a> <!-- getAlertDetail -->
-                  <span class="method-name">getAlertDetail</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getTransportationAlertsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTransportationAlerts">
-                  </a> <!-- getTransportationAlerts -->
-                  <span class="method-name">getTransportationAlerts</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesnapshotinaccount">
-                  </a> <!-- getvehiclesnapshotinaccount -->
-                  <span class="method-name">getvehiclesnapshotinaccount</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getRawDataInTimeRange">
-                  </a> <!-- getRawDataInTimeRange -->
-                  <span class="method-name">getRawDataInTimeRange</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="gettripdetailsSG">
-                  </a> <!-- gettripdetailsSG -->
-                  <span class="method-name">gettripdetailsSG</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getdevicesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getdevices">
-                  </a> <!-- getdevices -->
-                  <span class="method-name">getdevices</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getapnlistbyvehicleid">
-                  </a> <!-- getapnlistbyvehicleid -->
-                  <span class="method-name">getapnlistbyvehicleid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesnapshotbydate">
-                  </a> <!-- getvehiclesnapshotbydate -->
-                  <span class="method-name">getvehiclesnapshotbydate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getstoppedvehicles">
-                  </a> <!-- getstoppedvehicles -->
-                  <span class="method-name">getstoppedvehicles</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createDriverDispatchTask">
-                  </a> <!-- createDriverDispatchTask -->
-                  <span class="method-name">createDriverDispatchTask</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehicles">
-                  </a> <!-- getvehicles -->
-                  <span class="method-name">getvehicles</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesoutofnetworkbyplan">
-                  </a> <!-- getvehiclesoutofnetworkbyplan -->
-                  <span class="method-name">getvehiclesoutofnetworkbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesnapshotinaccountbyplan">
-                  </a> <!-- getvehiclesnapshotinaccountbyplan -->
-                  <span class="method-name">getvehiclesnapshotinaccountbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesbyplan">
-                  </a> <!-- getvehiclesbyplan -->
-                  <span class="method-name">getvehiclesbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclecurrentlocation">
-                  </a> <!-- getvehiclecurrentlocation -->
-                  <span class="method-name">getvehiclecurrentlocation</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehicleoverviewTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehicleoverview">
-                  </a> <!-- getvehicleoverview -->
-                  <span class="method-name">getvehicleoverview</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesnapshot">
-                  </a> <!-- getvehiclesnapshot -->
-                  <span class="method-name">getvehiclesnapshot</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclegroupsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclegroups">
-                  </a> <!-- getvehiclegroups -->
-                  <span class="method-name">getvehiclegroups</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getdailysummaryreport">
-                  </a> <!-- getdailysummaryreport -->
-                  <span class="method-name">getdailysummaryreport</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.saveFenceZoneTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="saveFenceZone">
-                  </a> <!-- saveFenceZone -->
-                  <span class="method-name">saveFenceZone</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getdriversTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getdrivers">
-                  </a> <!-- getdrivers -->
-                  <span class="method-name">getdrivers</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.updateodometerTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="updateodometer">
-                  </a> <!-- updateodometer -->
-                  <span class="method-name">updateodometer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getDealerVehicleSnapshot">
-                  </a> <!-- getDealerVehicleSnapshot -->
-                  <span class="method-name">getDealerVehicleSnapshot</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehicleoverviewbyplan">
-                  </a> <!-- getvehicleoverviewbyplan -->
-                  <span class="method-name">getvehicleoverviewbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getVehicleRawDetails">
-                  </a> <!-- getVehicleRawDetails -->
-                  <span class="method-name">getVehicleRawDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getplansTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getplans">
-                  </a> <!-- getplans -->
-                  <span class="method-name">getplans</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getmovingvehiclesbyplan">
-                  </a> <!-- getmovingvehiclesbyplan -->
-                  <span class="method-name">getmovingvehiclesbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getavlcountrylistTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getavlcountrylist">
-                  </a> <!-- getavlcountrylist -->
-                  <span class="method-name">getavlcountrylist</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclehistory">
-                  </a> <!-- getvehiclehistory -->
-                  <span class="method-name">getvehiclehistory</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.addgroupTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addgroup">
-                  </a> <!-- addgroup -->
-                  <span class="method-name">addgroup</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getidlereportTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getidlereport">
-                  </a> <!-- getidlereport -->
-                  <span class="method-name">getidlereport</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getTripDetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getTripDetails">
-                  </a> <!-- getTripDetails -->
-                  <span class="method-name">getTripDetails</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getmovingvehiclesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getmovingvehicles">
-                  </a> <!-- getmovingvehicles -->
-                  <span class="method-name">getmovingvehicles</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getstoppedvehiclesbyplan">
-                  </a> <!-- getstoppedvehiclesbyplan -->
-                  <span class="method-name">getstoppedvehiclesbyplan</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclemakesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclemakes">
-                  </a> <!-- getvehiclemakes -->
-                  <span class="method-name">getvehiclemakes</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getvehiclesubscriptions">
-                  </a> <!-- getvehiclesubscriptions -->
-                  <span class="method-name">getvehiclesubscriptions</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="getstoppagedetails">
-                  </a> <!-- getstoppagedetails -->
-                  <span class="method-name">getstoppagedetails</span>
+                  <a name="getvehiclehistorySG">
+                  </a> <!-- getvehiclehistorySG -->
+                  <span class="method-name">getvehiclehistorySG</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1193,14 +440,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehicletypesTest</span>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getvehicletypes">
-                  </a> <!-- getvehicletypes -->
-                  <span class="method-name">getvehicletypes</span>
+                  <a name="getAllDriverDispatchTasks">
+                  </a> <!-- getAllDriverDispatchTasks -->
+                  <span class="method-name">getAllDriverDispatchTasks</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1208,14 +455,344 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclemodelsTest</span>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getvehiclemodels">
-                  </a> <!-- getvehiclemodels -->
-                  <span class="method-name">getvehiclemodels</span>
+                  <a name="getvehiclesnapshotinaccountSG">
+                  </a> <!-- getvehiclesnapshotinaccountSG -->
+                  <span class="method-name">getvehiclesnapshotinaccountSG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getmovingvehiclesbyplan">
+                  </a> <!-- getmovingvehiclesbyplan -->
+                  <span class="method-name">getmovingvehiclesbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gettripdetailsSG">
+                  </a> <!-- gettripdetailsSG -->
+                  <span class="method-name">gettripdetailsSG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesbyplan">
+                  </a> <!-- getvehiclesbyplan -->
+                  <span class="method-name">getvehiclesbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getmovingvehiclesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getmovingvehicles">
+                  </a> <!-- getmovingvehicles -->
+                  <span class="method-name">getmovingvehicles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getdailysummaryreport">
+                  </a> <!-- getdailysummaryreport -->
+                  <span class="method-name">getdailysummaryreport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getplansTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getplans">
+                  </a> <!-- getplans -->
+                  <span class="method-name">getplans</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesoutofnetworkbyplan">
+                  </a> <!-- getvehiclesoutofnetworkbyplan -->
+                  <span class="method-name">getvehiclesoutofnetworkbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getTransportationAlertsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTransportationAlerts">
+                  </a> <!-- getTransportationAlerts -->
+                  <span class="method-name">getTransportationAlerts</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getTripDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTripDetails">
+                  </a> <!-- getTripDetails -->
+                  <span class="method-name">getTripDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getdisconnectedvehiclesbyplan">
+                  </a> <!-- getdisconnectedvehiclesbyplan -->
+                  <span class="method-name">getdisconnectedvehiclesbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.addorgunitTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addorgunit">
+                  </a> <!-- addorgunit -->
+                  <span class="method-name">addorgunit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getorgunitsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getorgunits">
+                  </a> <!-- getorgunits -->
+                  <span class="method-name">getorgunits</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehicleoverviewTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehicleoverview">
+                  </a> <!-- getvehicleoverview -->
+                  <span class="method-name">getvehicleoverview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getdriversTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getdrivers">
+                  </a> <!-- getdrivers -->
+                  <span class="method-name">getdrivers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getstoppagedetails">
+                  </a> <!-- getstoppagedetails -->
+                  <span class="method-name">getstoppagedetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getWaypointsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getWaypoints">
+                  </a> <!-- getWaypoints -->
+                  <span class="method-name">getWaypoints</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclecurrentlocation">
+                  </a> <!-- getvehiclecurrentlocation -->
+                  <span class="method-name">getvehiclecurrentlocation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesubscriptions">
+                  </a> <!-- getvehiclesubscriptions -->
+                  <span class="method-name">getvehiclesubscriptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getSummaryReportTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getSummaryReport">
+                  </a> <!-- getSummaryReport -->
+                  <span class="method-name">getSummaryReport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.gettimezonesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="gettimezones">
+                  </a> <!-- gettimezones -->
+                  <span class="method-name">gettimezones</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getapnlistbyvehicleid">
+                  </a> <!-- getapnlistbyvehicleid -->
+                  <span class="method-name">getapnlistbyvehicleid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclegroupsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclegroups">
+                  </a> <!-- getvehiclegroups -->
+                  <span class="method-name">getvehiclegroups</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1238,14 +815,134 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest</span>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getidlereportTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getvehiclesoutofnetwork">
-                  </a> <!-- getvehiclesoutofnetwork -->
-                  <span class="method-name">getvehiclesoutofnetwork</span>
+                  <a name="getidlereport">
+                  </a> <!-- getidlereport -->
+                  <span class="method-name">getidlereport</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclemakesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclemakes">
+                  </a> <!-- getvehiclemakes -->
+                  <span class="method-name">getvehiclemakes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getVehicleRawDetails">
+                  </a> <!-- getVehicleRawDetails -->
+                  <span class="method-name">getVehicleRawDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getDealerVehicleSnapshot">
+                  </a> <!-- getDealerVehicleSnapshot -->
+                  <span class="method-name">getDealerVehicleSnapshot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getstoppedvehicles">
+                  </a> <!-- getstoppedvehicles -->
+                  <span class="method-name">getstoppedvehicles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesnapshotinaccount">
+                  </a> <!-- getvehiclesnapshotinaccount -->
+                  <span class="method-name">getvehiclesnapshotinaccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.saveFenceZoneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="saveFenceZone">
+                  </a> <!-- saveFenceZone -->
+                  <span class="method-name">saveFenceZone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehicletypesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehicletypes">
+                  </a> <!-- getvehicletypes -->
+                  <span class="method-name">getvehicletypes</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getapnlistbycountryid">
+                  </a> <!-- getapnlistbycountryid -->
+                  <span class="method-name">getapnlistbycountryid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -1265,6 +962,276 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getdevicesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getdevices">
+                  </a> <!-- getdevices -->
+                  <span class="method-name">getdevices</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getAlertDetailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlertDetail">
+                  </a> <!-- getAlertDetail -->
+                  <span class="method-name">getAlertDetail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehicleoverviewbyplan">
+                  </a> <!-- getvehicleoverviewbyplan -->
+                  <span class="method-name">getvehicleoverviewbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclehistory">
+                  </a> <!-- getvehiclehistory -->
+                  <span class="method-name">getvehiclehistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.adddriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="adddriver">
+                  </a> <!-- adddriver -->
+                  <span class="method-name">adddriver</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesnapshotbydate">
+                  </a> <!-- getvehiclesnapshotbydate -->
+                  <span class="method-name">getvehiclesnapshotbydate</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getavlcountrylistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getavlcountrylist">
+                  </a> <!-- getavlcountrylist -->
+                  <span class="method-name">getavlcountrylist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclemodelsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclemodels">
+                  </a> <!-- getvehiclemodels -->
+                  <span class="method-name">getvehiclemodels</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getactivevehiclesnapshotinaccountSG">
+                  </a> <!-- getactivevehiclesnapshotinaccountSG -->
+                  <span class="method-name">getactivevehiclesnapshotinaccountSG</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getstoppedvehiclesbyplan">
+                  </a> <!-- getstoppedvehiclesbyplan -->
+                  <span class="method-name">getstoppedvehiclesbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesnapshot">
+                  </a> <!-- getvehiclesnapshot -->
+                  <span class="method-name">getvehiclesnapshot</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.addgroupTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addgroup">
+                  </a> <!-- addgroup -->
+                  <span class="method-name">addgroup</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehiclesnapshotinaccountbyplan">
+                  </a> <!-- getvehiclesnapshotinaccountbyplan -->
+                  <span class="method-name">getvehiclesnapshotinaccountbyplan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getvehiclesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getvehicles">
+                  </a> <!-- getvehicles -->
+                  <span class="method-name">getvehicles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.updateodometerTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateodometer">
+                  </a> <!-- updateodometer -->
+                  <span class="method-name">updateodometer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getRawDataInTimeRange">
+                  </a> <!-- getRawDataInTimeRange -->
+                  <span class="method-name">getRawDataInTimeRange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getdisconnectedVehicles">
+                  </a> <!-- getdisconnectedVehicles -->
+                  <span class="method-name">getdisconnectedVehicles</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createDriverDispatchTask">
+                  </a> <!-- createDriverDispatchTask -->
+                  <span class="method-name">createDriverDispatchTask</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -1279,6 +1246,11 @@
     &lt;listener class-name=&quot;com.avlview.ExtentReporterListner.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Get Requests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;GetRequests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;apitests.com.avlview.app.GETMethods.getvehiclemakesTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.GETMethods.getvehiclemodelsTest&quot;/&gt;
@@ -1308,6 +1280,11 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Get Requests --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Post Requests&quot;&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;Post Requests&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest&quot;/&gt;
@@ -1335,7 +1312,7 @@
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest&quot;/&gt;
-      &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest&quot;/&gt;
+      &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.addgroupTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.adddriverTest&quot;/&gt;
       &lt;class name=&quot;apitests.com.avlview.app.POSTMethods.saveFenceZoneTest&quot;/&gt;
@@ -1368,6 +1345,238 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">GetRequests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllDriverDispatchTasks</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAllDriversDispatchModule</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getDealerVehicleSnapshot</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTransportationAlerts</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getVehicleRawDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getavlcountrylist</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getdevices</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getdisconnectedVehicles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getdrivers</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getmovingvehicles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getorgunits</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getplans</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getstoppedvehicles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">gettimezones</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclegroups</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclemakes</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclemodels</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehicleoverview</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehicles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesnapshotinaccount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesoutofnetwork</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesubscriptions</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehicletypes</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">updateodometer</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Post Requests</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">adddriver</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addgroup</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">addorgunit</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createDriverDispatchTask</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getAlertDetail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getRawDataInTimeRange</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getSummaryReport</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getTripDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getWaypoints</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getactivevehiclesnapshotinaccountSG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getapnlistbycountryid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getapnlistbyvehicleid</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getdailysummaryreport</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getdisconnectedvehiclesbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getidlereport</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getmovingvehiclesbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getnearbyvehicles</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getnearbyvehiclesbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getstoppagedetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getstoppedvehiclesbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">gettripdetailsSG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclecurrentlocation</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclehistory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclehistorySG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehicleoverviewbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesnapshot</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesnapshotbydate</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesnapshotinaccountSG</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesnapshotinaccountbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">getvehiclesoutofnetworkbyplan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">saveFenceZone</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -1384,235 +1593,231 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(57);
+data.addRows(56);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'updateodometer')
 data.setCell(0, 2, 'apitests.com.avlview.app.GETMethods.updateodometerTest')
-data.setCell(0, 3, 60687);
+data.setCell(0, 3, 60553);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getDealerVehicleSnapshot')
 data.setCell(1, 2, 'apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest')
-data.setCell(1, 3, 11035);
+data.setCell(1, 3, 8728);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'getvehicleoverviewbyplan')
-data.setCell(2, 2, 'apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest')
-data.setCell(2, 3, 2496);
+data.setCell(2, 1, 'getvehiclehistorySG')
+data.setCell(2, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest')
+data.setCell(2, 3, 5502);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'getvehicleoverview')
-data.setCell(3, 2, 'apitests.com.avlview.app.GETMethods.getvehicleoverviewTest')
-data.setCell(3, 3, 1955);
+data.setCell(3, 1, 'getvehiclesubscriptions')
+data.setCell(3, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest')
+data.setCell(3, 3, 2127);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'getvehiclesnapshotinaccount')
-data.setCell(4, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest')
-data.setCell(4, 3, 1882);
+data.setCell(4, 1, 'getvehicleoverviewbyplan')
+data.setCell(4, 2, 'apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest')
+data.setCell(4, 3, 2019);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getvehiclemakes')
-data.setCell(5, 2, 'apitests.com.avlview.app.GETMethods.getvehiclemakesTest')
-data.setCell(5, 3, 1858);
+data.setCell(5, 1, 'getVehicleRawDetails')
+data.setCell(5, 2, 'apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest')
+data.setCell(5, 3, 1826);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getVehicleRawDetails')
-data.setCell(6, 2, 'apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest')
-data.setCell(6, 3, 1565);
+data.setCell(6, 1, 'getvehiclemakes')
+data.setCell(6, 2, 'apitests.com.avlview.app.GETMethods.getvehiclemakesTest')
+data.setCell(6, 3, 1744);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getavlcountrylist')
-data.setCell(7, 2, 'apitests.com.avlview.app.GETMethods.getavlcountrylistTest')
-data.setCell(7, 3, 1481);
+data.setCell(7, 1, 'getvehicleoverview')
+data.setCell(7, 2, 'apitests.com.avlview.app.GETMethods.getvehicleoverviewTest')
+data.setCell(7, 3, 1727);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'getapnlistbycountryid')
-data.setCell(8, 2, 'apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest')
-data.setCell(8, 3, 1406);
+data.setCell(8, 1, 'getSummaryReport')
+data.setCell(8, 2, 'apitests.com.avlview.app.POSTMethods.getSummaryReportTest')
+data.setCell(8, 3, 1493);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'addgroup')
-data.setCell(9, 2, 'apitests.com.avlview.app.POSTMethods.addgroupTest')
-data.setCell(9, 3, 1364);
+data.setCell(9, 1, 'getapnlistbycountryid')
+data.setCell(9, 2, 'apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest')
+data.setCell(9, 3, 1360);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'getdailysummaryreport')
 data.setCell(10, 2, 'apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest')
-data.setCell(10, 3, 1327);
+data.setCell(10, 3, 1235);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'getSummaryReport')
-data.setCell(11, 2, 'apitests.com.avlview.app.POSTMethods.getSummaryReportTest')
-data.setCell(11, 3, 1220);
+data.setCell(11, 1, 'gettripdetailsSG')
+data.setCell(11, 2, 'apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest')
+data.setCell(11, 3, 953);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'getvehiclesnapshot')
-data.setCell(12, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest')
-data.setCell(12, 3, 1089);
+data.setCell(12, 1, 'getdisconnectedVehicles')
+data.setCell(12, 2, 'apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest')
+data.setCell(12, 3, 916);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'getvehiclehistory')
-data.setCell(13, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest')
-data.setCell(13, 3, 1018);
+data.setCell(13, 1, 'getTransportationAlerts')
+data.setCell(13, 2, 'apitests.com.avlview.app.GETMethods.getTransportationAlertsTest')
+data.setCell(13, 3, 886);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'getRawDataInTimeRange')
 data.setCell(14, 2, 'apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest')
-data.setCell(14, 3, 958);
+data.setCell(14, 3, 880);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'getvehiclesubscriptions')
-data.setCell(15, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest')
-data.setCell(15, 3, 954);
+data.setCell(15, 1, 'getvehicles')
+data.setCell(15, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesTest')
+data.setCell(15, 3, 845);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'getvehiclesnapshotinaccountbyplan')
-data.setCell(16, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest')
-data.setCell(16, 3, 954);
+data.setCell(16, 1, 'getavlcountrylist')
+data.setCell(16, 2, 'apitests.com.avlview.app.GETMethods.getavlcountrylistTest')
+data.setCell(16, 3, 810);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'getvehicles')
-data.setCell(17, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesTest')
-data.setCell(17, 3, 931);
+data.setCell(17, 1, 'getdrivers')
+data.setCell(17, 2, 'apitests.com.avlview.app.GETMethods.getdriversTest')
+data.setCell(17, 3, 791);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'gettripdetailsSG')
-data.setCell(18, 2, 'apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest')
-data.setCell(18, 3, 843);
+data.setCell(18, 1, 'getAlertDetail')
+data.setCell(18, 2, 'apitests.com.avlview.app.POSTMethods.getAlertDetailTest')
+data.setCell(18, 3, 777);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'getdrivers')
-data.setCell(19, 2, 'apitests.com.avlview.app.GETMethods.getdriversTest')
-data.setCell(19, 3, 810);
+data.setCell(19, 1, 'getmovingvehicles')
+data.setCell(19, 2, 'apitests.com.avlview.app.GETMethods.getmovingvehiclesTest')
+data.setCell(19, 3, 760);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'getAlertDetail')
-data.setCell(20, 2, 'apitests.com.avlview.app.POSTMethods.getAlertDetailTest')
-data.setCell(20, 3, 778);
+data.setCell(20, 1, 'getvehiclehistory')
+data.setCell(20, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest')
+data.setCell(20, 3, 734);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'getTransportationAlerts')
-data.setCell(21, 2, 'apitests.com.avlview.app.GETMethods.getTransportationAlertsTest')
-data.setCell(21, 3, 744);
+data.setCell(21, 1, 'getvehiclecurrentlocation')
+data.setCell(21, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest')
+data.setCell(21, 3, 719);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'getvehiclecurrentlocation')
-data.setCell(22, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest')
-data.setCell(22, 3, 723);
+data.setCell(22, 1, 'getapnlistbyvehicleid')
+data.setCell(22, 2, 'apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest')
+data.setCell(22, 3, 705);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'saveFenceZone')
-data.setCell(23, 2, 'apitests.com.avlview.app.POSTMethods.saveFenceZoneTest')
-data.setCell(23, 3, 708);
+data.setCell(23, 1, 'getvehiclesnapshotinaccountSG')
+data.setCell(23, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest')
+data.setCell(23, 3, 701);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'getmovingvehicles')
-data.setCell(24, 2, 'apitests.com.avlview.app.GETMethods.getmovingvehiclesTest')
-data.setCell(24, 3, 685);
+data.setCell(24, 1, 'getnearbyvehicles')
+data.setCell(24, 2, 'apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest')
+data.setCell(24, 3, 689);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'getdisconnectedVehicles')
-data.setCell(25, 2, 'apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest')
-data.setCell(25, 3, 682);
+data.setCell(25, 1, 'getidlereport')
+data.setCell(25, 2, 'apitests.com.avlview.app.POSTMethods.getidlereportTest')
+data.setCell(25, 3, 672);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'getdisconnectedvehiclesbyplan')
-data.setCell(26, 2, 'apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest')
-data.setCell(26, 3, 681);
+data.setCell(26, 1, 'adddriver')
+data.setCell(26, 2, 'apitests.com.avlview.app.POSTMethods.adddriverTest')
+data.setCell(26, 3, 643);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'getWaypoints')
-data.setCell(27, 2, 'apitests.com.avlview.app.POSTMethods.getWaypointsTest')
-data.setCell(27, 3, 621);
+data.setCell(27, 1, 'getTripDetails')
+data.setCell(27, 2, 'apitests.com.avlview.app.POSTMethods.getTripDetailsTest')
+data.setCell(27, 3, 619);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'getTripDetails')
-data.setCell(28, 2, 'apitests.com.avlview.app.POSTMethods.getTripDetailsTest')
-data.setCell(28, 3, 620);
+data.setCell(28, 1, 'getvehiclesnapshotinaccountbyplan')
+data.setCell(28, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest')
+data.setCell(28, 3, 608);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'getAllDriverDispatchTasks')
-data.setCell(29, 2, 'apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest')
-data.setCell(29, 3, 614);
+data.setCell(29, 1, 'getmovingvehiclesbyplan')
+data.setCell(29, 2, 'apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest')
+data.setCell(29, 3, 595);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'getstoppedvehicles')
-data.setCell(30, 2, 'apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest')
-data.setCell(30, 3, 609);
+data.setCell(30, 1, 'getstoppedvehiclesbyplan')
+data.setCell(30, 2, 'apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest')
+data.setCell(30, 3, 590);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'getidlereport')
-data.setCell(31, 2, 'apitests.com.avlview.app.POSTMethods.getidlereportTest')
-data.setCell(31, 3, 605);
+data.setCell(31, 1, 'getvehiclesnapshotinaccount')
+data.setCell(31, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest')
+data.setCell(31, 3, 586);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'getvehiclesoutofnetworkbyplan')
-data.setCell(32, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest')
-data.setCell(32, 3, 598);
+data.setCell(32, 1, 'createDriverDispatchTask')
+data.setCell(32, 2, 'apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest')
+data.setCell(32, 3, 584);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'getmovingvehiclesbyplan')
-data.setCell(33, 2, 'apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest')
-data.setCell(33, 3, 598);
+data.setCell(33, 1, 'getvehiclesoutofnetwork')
+data.setCell(33, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest')
+data.setCell(33, 3, 579);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'getvehiclesbyplan')
-data.setCell(34, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest')
-data.setCell(34, 3, 587);
+data.setCell(34, 1, 'getstoppedvehicles')
+data.setCell(34, 2, 'apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest')
+data.setCell(34, 3, 578);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'getvehiclegroups')
-data.setCell(35, 2, 'apitests.com.avlview.app.GETMethods.getvehiclegroupsTest')
-data.setCell(35, 3, 585);
+data.setCell(35, 1, 'getactivevehiclesnapshotinaccountSG')
+data.setCell(35, 2, 'apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest')
+data.setCell(35, 3, 572);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'getstoppedvehiclesbyplan')
-data.setCell(36, 2, 'apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest')
-data.setCell(36, 3, 584);
+data.setCell(36, 1, 'getdisconnectedvehiclesbyplan')
+data.setCell(36, 2, 'apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest')
+data.setCell(36, 3, 572);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'createDriverDispatchTask')
-data.setCell(37, 2, 'apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest')
-data.setCell(37, 3, 575);
+data.setCell(37, 1, 'getvehiclesoutofnetworkbyplan')
+data.setCell(37, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest')
+data.setCell(37, 3, 571);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'getvehiclesnapshotbydate')
-data.setCell(38, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest')
-data.setCell(38, 3, 566);
+data.setCell(38, 1, 'getplans')
+data.setCell(38, 2, 'apitests.com.avlview.app.GETMethods.getplansTest')
+data.setCell(38, 3, 564);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'adddriver')
-data.setCell(39, 2, 'apitests.com.avlview.app.POSTMethods.adddriverTest')
-data.setCell(39, 3, 566);
+data.setCell(39, 1, 'getvehiclesbyplan')
+data.setCell(39, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest')
+data.setCell(39, 3, 564);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'getvehiclesnapshotinaccountSG')
-data.setCell(40, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest')
-data.setCell(40, 3, 563);
+data.setCell(40, 1, 'addgroup')
+data.setCell(40, 2, 'apitests.com.avlview.app.POSTMethods.addgroupTest')
+data.setCell(40, 3, 555);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'getvehiclesoutofnetwork')
-data.setCell(41, 2, 'apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest')
-data.setCell(41, 3, 562);
+data.setCell(41, 1, 'getdevices')
+data.setCell(41, 2, 'apitests.com.avlview.app.GETMethods.getdevicesTest')
+data.setCell(41, 3, 552);
 data.setCell(42, 0, 42)
-data.setCell(42, 1, 'getdevices')
-data.setCell(42, 2, 'apitests.com.avlview.app.GETMethods.getdevicesTest')
-data.setCell(42, 3, 559);
+data.setCell(42, 1, 'addorgunit')
+data.setCell(42, 2, 'apitests.com.avlview.app.POSTMethods.addorgunitTest')
+data.setCell(42, 3, 551);
 data.setCell(43, 0, 43)
-data.setCell(43, 1, 'addvehicle')
-data.setCell(43, 2, 'apitests.com.avlview.app.POSTMethods.addvehicleTest')
-data.setCell(43, 3, 557);
+data.setCell(43, 1, 'saveFenceZone')
+data.setCell(43, 2, 'apitests.com.avlview.app.POSTMethods.saveFenceZoneTest')
+data.setCell(43, 3, 546);
 data.setCell(44, 0, 44)
-data.setCell(44, 1, 'getactivevehiclesnapshotinaccountSG')
-data.setCell(44, 2, 'apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest')
-data.setCell(44, 3, 555);
+data.setCell(44, 1, 'getstoppagedetails')
+data.setCell(44, 2, 'apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest')
+data.setCell(44, 3, 542);
 data.setCell(45, 0, 45)
-data.setCell(45, 1, 'getstoppagedetails')
-data.setCell(45, 2, 'apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest')
-data.setCell(45, 3, 554);
+data.setCell(45, 1, 'getvehiclesnapshotbydate')
+data.setCell(45, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest')
+data.setCell(45, 3, 540);
 data.setCell(46, 0, 46)
 data.setCell(46, 1, 'getvehiclemodels')
 data.setCell(46, 2, 'apitests.com.avlview.app.GETMethods.getvehiclemodelsTest')
-data.setCell(46, 3, 553);
+data.setCell(46, 3, 539);
 data.setCell(47, 0, 47)
-data.setCell(47, 1, 'getapnlistbyvehicleid')
-data.setCell(47, 2, 'apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest')
-data.setCell(47, 3, 552);
+data.setCell(47, 1, 'gettimezones')
+data.setCell(47, 2, 'apitests.com.avlview.app.GETMethods.gettimezonesTest')
+data.setCell(47, 3, 538);
 data.setCell(48, 0, 48)
-data.setCell(48, 1, 'getnearbyvehicles')
-data.setCell(48, 2, 'apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest')
-data.setCell(48, 3, 551);
+data.setCell(48, 1, 'getvehiclesnapshot')
+data.setCell(48, 2, 'apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest')
+data.setCell(48, 3, 536);
 data.setCell(49, 0, 49)
-data.setCell(49, 1, 'addorgunit')
-data.setCell(49, 2, 'apitests.com.avlview.app.POSTMethods.addorgunitTest')
-data.setCell(49, 3, 545);
+data.setCell(49, 1, 'getWaypoints')
+data.setCell(49, 2, 'apitests.com.avlview.app.POSTMethods.getWaypointsTest')
+data.setCell(49, 3, 534);
 data.setCell(50, 0, 50)
 data.setCell(50, 1, 'getAllDriverDispatchTasks')
-data.setCell(50, 2, 'apitests.com.avlview.app.GETMethods.removeTaskTest')
-data.setCell(50, 3, 544);
+data.setCell(50, 2, 'apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest')
+data.setCell(50, 3, 531);
 data.setCell(51, 0, 51)
-data.setCell(51, 1, 'getnearbyvehiclesbyplan')
-data.setCell(51, 2, 'apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest')
-data.setCell(51, 3, 544);
+data.setCell(51, 1, 'getAllDriversDispatchModule')
+data.setCell(51, 2, 'apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest')
+data.setCell(51, 3, 527);
 data.setCell(52, 0, 52)
 data.setCell(52, 1, 'getvehicletypes')
 data.setCell(52, 2, 'apitests.com.avlview.app.GETMethods.getvehicletypesTest')
-data.setCell(52, 3, 536);
+data.setCell(52, 3, 527);
 data.setCell(53, 0, 53)
-data.setCell(53, 1, 'getorgunits')
-data.setCell(53, 2, 'apitests.com.avlview.app.GETMethods.getorgunitsTest')
-data.setCell(53, 3, 535);
+data.setCell(53, 1, 'getnearbyvehiclesbyplan')
+data.setCell(53, 2, 'apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest')
+data.setCell(53, 3, 527);
 data.setCell(54, 0, 54)
-data.setCell(54, 1, 'getplans')
-data.setCell(54, 2, 'apitests.com.avlview.app.GETMethods.getplansTest')
-data.setCell(54, 3, 534);
+data.setCell(54, 1, 'getorgunits')
+data.setCell(54, 2, 'apitests.com.avlview.app.GETMethods.getorgunitsTest')
+data.setCell(54, 3, 524);
 data.setCell(55, 0, 55)
-data.setCell(55, 1, 'gettimezones')
-data.setCell(55, 2, 'apitests.com.avlview.app.GETMethods.gettimezonesTest')
-data.setCell(55, 3, 532);
-data.setCell(56, 0, 56)
-data.setCell(56, 1, 'getAllDriversDispatchModule')
-data.setCell(56, 2, 'apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest')
-data.setCell(56, 3, 529);
+data.setCell(55, 1, 'getvehiclegroups')
+data.setCell(55, 2, 'apitests.com.avlview.app.GETMethods.getvehiclegroupsTest')
+data.setCell(55, 3, 519);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -1632,9 +1837,23 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">apitests.com.avlview.app.POSTMethods.addvehicleTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">addvehicle</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">apitests.com.avlview.app.GETMethods.removeTaskTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">getAllDriverDispatchTasks</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -1650,625 +1869,612 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclemakes</span>
-                <span class="method-start">68 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclemodelsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">1934 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehiclemodels</span>
-                <span class="method-start">1934 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdevicesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">2491 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getdevices</span>
-                <span class="method-start">2491 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehicletypesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">3050 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehicletypes</span>
-                <span class="method-start">3054 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.gettimezonesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">3594 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">gettimezones</span>
-                <span class="method-start">3594 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclegroupsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">4126 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehiclegroups</span>
-                <span class="method-start">4126 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdriversTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">4711 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getdrivers</span>
-                <span class="method-start">4711 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">5521 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehiclesubscriptions</span>
-                <span class="method-start">5521 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getavlcountrylistTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">6476 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getavlcountrylist</span>
-                <span class="method-start">6477 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getplansTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">7962 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getplans</span>
-                <span class="method-start">7962 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">8496 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehicles</span>
-                <span class="method-start">8496 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehicleoverviewTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">9431 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehicleoverview</span>
-                <span class="method-start">9431 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">11390 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehiclesnapshotinaccount</span>
-                <span class="method-start">11390 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">13276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getstoppedvehicles</span>
-                <span class="method-start">13276 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getmovingvehiclesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">13889 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getmovingvehicles</span>
-                <span class="method-start">13889 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">14580 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getdisconnectedVehicles</span>
-                <span class="method-start">14581 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15263 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getvehiclesoutofnetwork</span>
-                <span class="method-start">15267 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getTransportationAlertsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15829 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getTransportationAlerts</span>
-                <span class="method-start">15833 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">16577 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getVehicleRawDetails</span>
-                <span class="method-start">16581 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">18150 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getDealerVehicleSnapshot</span>
-                <span class="method-start">18150 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getorgunitsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">29276 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getorgunits</span>
-                <span class="method-start">29276 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">29811 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getAllDriversDispatchModule</span>
-                <span class="method-start">29815 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">30348 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getAllDriverDispatchTasks</span>
-                <span class="method-start">30348 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.removeTaskTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">30962 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">getAllDriverDispatchTasks</span>
-                <span class="method-start">30962 ms</span>
+                <span class="method-start">17 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.updateodometerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">31510 ms</span>
+                <span class="method-start">1765 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">updateodometer</span>
-                <span class="method-start">31514 ms</span>
+                <span class="method-start">1765 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclemodelsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62325 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclemodels</span>
+                <span class="method-start">62326 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdevicesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">62873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getdevices</span>
+                <span class="method-start">62876 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehicletypesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">63432 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehicletypes</span>
+                <span class="method-start">63432 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.gettimezonesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">63962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">gettimezones</span>
+                <span class="method-start">63962 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclegroupsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">64500 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclegroups</span>
+                <span class="method-start">64503 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdriversTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">65030 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getdrivers</span>
+                <span class="method-start">65033 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesubscriptionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">65830 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclesubscriptions</span>
+                <span class="method-start">65831 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getavlcountrylistTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">67962 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getavlcountrylist</span>
+                <span class="method-start">67965 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getplansTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">68779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getplans</span>
+                <span class="method-start">68779 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">69347 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehicles</span>
+                <span class="method-start">69347 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehicleoverviewTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">70196 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehicleoverview</span>
+                <span class="method-start">70196 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesnapshotinaccountTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">71926 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclesnapshotinaccount</span>
+                <span class="method-start">71926 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getstoppedvehiclesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">72512 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getstoppedvehicles</span>
+                <span class="method-start">72512 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getmovingvehiclesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">73093 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getmovingvehicles</span>
+                <span class="method-start">73093 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getdisconnectedVehiclesTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">73853 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getdisconnectedVehicles</span>
+                <span class="method-start">73857 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getvehiclesoutofnetworkTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">74773 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclesoutofnetwork</span>
+                <span class="method-start">74777 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getTransportationAlertsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">75360 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getTransportationAlerts</span>
+                <span class="method-start">75360 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">76247 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getVehicleRawDetails</span>
+                <span class="method-start">76252 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getDealerVehicleSnapshotTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">78082 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getDealerVehicleSnapshot</span>
+                <span class="method-start">78082 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getorgunitsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">86819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getorgunits</span>
+                <span class="method-start">86820 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getAllDriversDispatchModuleTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">87344 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllDriversDispatchModule</span>
+                <span class="method-start">87348 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">87879 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAllDriverDispatchTasks</span>
+                <span class="method-start">87879 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">92459 ms</span>
+                <span class="method-start">88519 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getapnlistbycountryid</span>
-                <span class="method-start">92459 ms</span>
+                <span class="method-start">88519 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">93865 ms</span>
+                <span class="method-start">89879 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getapnlistbyvehicleid</span>
-                <span class="method-start">93873 ms</span>
+                <span class="method-start">89883 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">94425 ms</span>
+                <span class="method-start">90592 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesbyplan</span>
-                <span class="method-start">94426 ms</span>
+                <span class="method-start">90596 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclecurrentlocationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">95013 ms</span>
+                <span class="method-start">91164 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclecurrentlocation</span>
-                <span class="method-start">95013 ms</span>
+                <span class="method-start">91168 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehicleoverviewbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">95740 ms</span>
+                <span class="method-start">91891 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehicleoverviewbyplan</span>
-                <span class="method-start">95740 ms</span>
+                <span class="method-start">91891 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">98236 ms</span>
+                <span class="method-start">93914 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesnapshotinaccountbyplan</span>
-                <span class="method-start">98237 ms</span>
+                <span class="method-start">93914 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">99191 ms</span>
+                <span class="method-start">94530 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesnapshot</span>
-                <span class="method-start">99195 ms</span>
+                <span class="method-start">94530 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getstoppedvehiclesbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100284 ms</span>
+                <span class="method-start">95070 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getstoppedvehiclesbyplan</span>
-                <span class="method-start">100287 ms</span>
+                <span class="method-start">95070 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getmovingvehiclesbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">100874 ms</span>
+                <span class="method-start">95660 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getmovingvehiclesbyplan</span>
-                <span class="method-start">100875 ms</span>
+                <span class="method-start">95664 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesoutofnetworkbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">101475 ms</span>
+                <span class="method-start">96263 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesoutofnetworkbyplan</span>
-                <span class="method-start">101476 ms</span>
+                <span class="method-start">96263 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getdisconnectedvehiclesbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">102077 ms</span>
+                <span class="method-start">96834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getdisconnectedvehiclesbyplan</span>
-                <span class="method-start">102077 ms</span>
+                <span class="method-start">96838 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotbydateTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">102759 ms</span>
+                <span class="method-start">97410 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesnapshotbydate</span>
-                <span class="method-start">102763 ms</span>
+                <span class="method-start">97414 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">103333 ms</span>
+                <span class="method-start">97954 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclehistory</span>
-                <span class="method-start">103333 ms</span>
+                <span class="method-start">97954 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getnearbyvehiclesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">104355 ms</span>
+                <span class="method-start">98695 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getnearbyvehicles</span>
-                <span class="method-start">104355 ms</span>
+                <span class="method-start">98695 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getnearbyvehiclesbyplanTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">104910 ms</span>
+                <span class="method-start">99388 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getnearbyvehiclesbyplan</span>
-                <span class="method-start">104910 ms</span>
+                <span class="method-start">99388 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getstoppagedetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">105455 ms</span>
+                <span class="method-start">99919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getstoppagedetails</span>
-                <span class="method-start">105456 ms</span>
+                <span class="method-start">99919 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclesnapshotinaccountSGTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">106012 ms</span>
+                <span class="method-start">100465 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getvehiclesnapshotinaccountSG</span>
-                <span class="method-start">106013 ms</span>
+                <span class="method-start">100469 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getWaypointsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">106576 ms</span>
+                <span class="method-start">101170 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getWaypoints</span>
-                <span class="method-start">106580 ms</span>
+                <span class="method-start">101170 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getAlertDetailTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">107201 ms</span>
+                <span class="method-start">101704 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getAlertDetail</span>
-                <span class="method-start">107205 ms</span>
+                <span class="method-start">101704 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getTripDetailsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">107987 ms</span>
+                <span class="method-start">102484 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getTripDetails</span>
-                <span class="method-start">107991 ms</span>
+                <span class="method-start">102484 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getidlereportTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">108615 ms</span>
+                <span class="method-start">103103 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getidlereport</span>
-                <span class="method-start">108615 ms</span>
+                <span class="method-start">103110 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getdailysummaryreportTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">109228 ms</span>
+                <span class="method-start">103786 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getdailysummaryreport</span>
-                <span class="method-start">109228 ms</span>
+                <span class="method-start">103790 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getSummaryReportTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">110559 ms</span>
+                <span class="method-start">105027 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getSummaryReport</span>
-                <span class="method-start">110559 ms</span>
+                <span class="method-start">105027 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getRawDataInTimeRangeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">111779 ms</span>
+                <span class="method-start">106520 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getRawDataInTimeRange</span>
-                <span class="method-start">111780 ms</span>
+                <span class="method-start">106520 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">112738 ms</span>
+                <span class="method-start">107403 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getactivevehiclesnapshotinaccountSG</span>
-                <span class="method-start">112738 ms</span>
+                <span class="method-start">107407 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">113297 ms</span>
+                <span class="method-start">107983 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">gettripdetailsSG</span>
-                <span class="method-start">113297 ms</span>
+                <span class="method-start">107983 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">108944 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getvehiclehistorySG</span>
+                <span class="method-start">108944 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.addgroupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">114144 ms</span>
+                <span class="method-start">114446 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addgroup</span>
-                <span class="method-start">114144 ms</span>
+                <span class="method-start">114449 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.adddriverTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">115508 ms</span>
+                <span class="method-start">115004 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">adddriver</span>
-                <span class="method-start">115508 ms</span>
+                <span class="method-start">115008 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.saveFenceZoneTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">116074 ms</span>
+                <span class="method-start">115651 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">saveFenceZone</span>
-                <span class="method-start">116074 ms</span>
+                <span class="method-start">115655 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.addorgunitTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">116782 ms</span>
+                <span class="method-start">116205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addorgunit</span>
-                <span class="method-start">116782 ms</span>
+                <span class="method-start">116205 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.createDriverDispatchTaskTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">117327 ms</span>
+                <span class="method-start">116760 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createDriverDispatchTask</span>
-                <span class="method-start">117331 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">apitests.com.avlview.app.POSTMethods.addvehicleTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">117906 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">addvehicle</span>
-                <span class="method-start">117906 ms</span>
+                <span class="method-start">116760 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -7,6 +7,13 @@
 	</listeners>
 
 	<test name="Get Requests">
+
+		<groups>
+			<run>
+				<include name="GetRequests" />
+			</run>
+		</groups>
+
 		<classes>
 
 			<class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest" />
@@ -48,6 +55,13 @@
 	</test> <!-- Test -->
 
 	<test name="Post Requests">
+
+		<groups>
+			<run>
+				<include name="Post Requests" />
+			</run>
+		</groups>
+
 		<classes>
 
 			<class
@@ -95,7 +109,7 @@
 			<class
 				name="apitests.com.avlview.app.POSTMethods.getactivevehiclesnapshotinaccountSGTest" />
 			<class name="apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest" />
-			<class name="apitests.com.avlview.app.POSTMethods.getvehiclehistoryTest" />
+			<class name="apitests.com.avlview.app.POSTMethods.getvehiclehistorySGTest" />
 
 			<class name="apitests.com.avlview.app.POSTMethods.addgroupTest" />
 			<class name="apitests.com.avlview.app.POSTMethods.adddriverTest" />

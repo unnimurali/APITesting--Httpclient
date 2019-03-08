@@ -29,7 +29,7 @@ public class adddriverTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -41,7 +41,7 @@ public class adddriverTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void adddriver() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

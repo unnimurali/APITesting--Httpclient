@@ -30,7 +30,7 @@ public class addvehicleTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -42,7 +42,7 @@ public class addvehicleTest extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = false, groups = { "Post Requests" })
 	public void addvehicle() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

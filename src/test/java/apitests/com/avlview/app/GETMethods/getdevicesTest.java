@@ -36,7 +36,7 @@ public class getdevicesTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
@@ -45,7 +45,7 @@ public class getdevicesTest extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "GetRequests" })
 	public void getdevices() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();

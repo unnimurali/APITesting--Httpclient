@@ -33,7 +33,7 @@ public class getvehiclesoutofnetworkbyplanTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -45,7 +45,7 @@ public class getvehiclesoutofnetworkbyplanTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void getvehiclesoutofnetworkbyplan()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

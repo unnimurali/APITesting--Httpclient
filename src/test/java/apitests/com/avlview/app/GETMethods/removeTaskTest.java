@@ -31,7 +31,7 @@ public class removeTaskTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
@@ -40,7 +40,7 @@ public class removeTaskTest extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = false, groups = { "GetRequests" })
 	public void getAllDriverDispatchTasks() throws ClientProtocolException, IOException, SAXException,
 			ParserConfigurationException, URISyntaxException {
 

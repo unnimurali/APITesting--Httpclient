@@ -32,7 +32,7 @@ public class getvehiclesTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
@@ -41,9 +41,8 @@ public class getvehiclesTest extends TestBase {
 		url = serviceurl + apiurl;
 	}
 
-	@Test(enabled = true)
-	public void getvehicles()
-			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
+	@Test(enabled = true, groups = { "GetRequests" })
+	public void getvehicles() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
 		restclient = new RestClient();
 

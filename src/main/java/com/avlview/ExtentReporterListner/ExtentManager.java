@@ -27,6 +27,7 @@ public class ExtentManager {
 			extent.addSystemInfo("Host Name", "Murali");
 			extent.addSystemInfo("User Name", "mkrishnan");
 			extent.addSystemInfo("Environment", "QA");
+
 		}
 		return extent;
 	}

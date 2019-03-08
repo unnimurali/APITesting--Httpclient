@@ -32,16 +32,17 @@ public class getvehiclemakesTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 		serviceurl = prop.getProperty("URL");
 		apiurl = prop.getProperty("getvehiclemakesURL");
 
 		url = serviceurl + apiurl;
+
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "GetRequests" })
 	public void getvehiclemakes()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
@@ -51,6 +52,10 @@ public class getvehiclemakesTest extends TestBase {
 
 		headers.put("apiKey", prop.getProperty("apiKey_Get"));
 		headers.put("Accept", prop.getProperty("Accept"));
+
+		System.out.println(url);
+		System.out.println(serviceurl);
+		System.out.println(apiurl);
 
 		httpresponse = restclient.get(url, headers);
 

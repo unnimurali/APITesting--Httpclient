@@ -30,7 +30,7 @@ public class getAlertDetailTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -42,7 +42,7 @@ public class getAlertDetailTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void getAlertDetail()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

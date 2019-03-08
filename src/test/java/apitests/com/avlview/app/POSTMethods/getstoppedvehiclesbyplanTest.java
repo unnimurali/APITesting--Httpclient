@@ -33,7 +33,7 @@ public class getstoppedvehiclesbyplanTest extends TestBase {
 	CloseableHttpResponse httpresponse;
 	JSONObject xmlJSONObj;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
 
@@ -45,7 +45,7 @@ public class getstoppedvehiclesbyplanTest extends TestBase {
 
 	}
 
-	@Test(enabled = true)
+	@Test(enabled = true, groups = { "Post Requests" })
 	public void getstoppedvehiclesbyplan()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
