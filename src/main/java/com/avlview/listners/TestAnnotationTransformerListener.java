@@ -15,6 +15,7 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 		// TODO Auto-generated method stub
 
 		System.out.println(System.getenv("getvehiclemakesTest"));
+		System.getenv("All");
 		// runstatus = System.getenv("getvehiclemakesTest");
 		// status = Boolean.parseBoolean(runstatus);
 		// System.out.println(status);
@@ -26,7 +27,8 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 				&& System.getenv("getapnlistbycountryidTest").contains("false")) {
 			System.out.println("set data provider for " + testMethod.getName());
 			annotation.setEnabled(false);
-		} else if (testMethod.getName().equals("") && System.getenv("All").contains("false")) {
+		} else if (System.getenv("All").contains("false")) {
+			System.out.println("all");
 			annotation.setEnabled(false);
 		}
 
