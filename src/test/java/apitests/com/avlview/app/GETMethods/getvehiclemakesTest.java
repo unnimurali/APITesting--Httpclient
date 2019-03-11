@@ -28,6 +28,8 @@ public class getvehiclemakesTest extends TestBase {
 	String url;
 	RestClient restclient;
 	CloseableHttpResponse httpresponse;
+	String runstatus;
+	boolean status;
 
 	JSONObject xmlJSONObj;
 	String responseString;
@@ -41,10 +43,13 @@ public class getvehiclemakesTest extends TestBase {
 		url = serviceurl + apiurl;
 
 		System.out.println(System.getenv("getvehiclemakesTest"));
+		runstatus = System.getenv("getvehiclemakesTest");
+		status = Boolean.parseBoolean(runstatus);
+		System.out.println(status);
 
 	}
 
-	@Test(enabled = true, groups = { "GetRequests" })
+	@Test(groups = { "GetRequests" })
 	public void getvehiclemakes()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
