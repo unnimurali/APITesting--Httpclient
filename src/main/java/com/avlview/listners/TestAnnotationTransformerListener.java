@@ -14,26 +14,27 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 		// TODO Auto-generated method stub
 
-		System.out.println(System.getenv("getvehiclemakesTest"));
+		// System.out.println(System.getenv("getvehiclemakesTest"));
 		System.out.println(System.getenv("All"));
-		System.out.println(testMethod.getName().isEmpty());
-		// runstatus = System.getenv("getvehiclemakesTest");
-		// status = Boolean.parseBoolean(runstatus);
-		// System.out.println(status);
 
-		if (System.getenv("All").contains("false")) {
-			System.out.println("all");
-			annotation.setEnabled(false);
+		if (!annotation.getEnabled()) {
+			System.out.println(testClass != null ? testClass : testMethod);
 		}
 
-		if (testMethod.getName().equals("getvehiclemakes") && System.getenv("getvehiclemakesTest").contains("false")) {
-			System.out.println("Disable " + testMethod.getName());
-			annotation.setEnabled(false);
-		} else if (testMethod.getName().equals("getapnlistbycountryid")
-				&& System.getenv("getapnlistbycountryidTest").contains("false")) {
-			System.out.println("set data provider for " + testMethod.getName());
-			annotation.setEnabled(false);
-		}
+		/*
+		 * if (!annotation.getEnabled() && System.getenv("All").contains("false")) {
+		 * System.out.println("all"); annotation.setEnabled(false); }
+		 */
+		/*
+		 * if (testMethod.getName().equals("getvehiclemakes") &&
+		 * System.getenv("getvehiclemakesTest").contains("false")) {
+		 * System.out.println("Disable " + testMethod.getName());
+		 * annotation.setEnabled(false); } else if
+		 * (testMethod.getName().equals("getapnlistbycountryid") &&
+		 * System.getenv("getapnlistbycountryidTest").contains("false")) {
+		 * System.out.println("set data provider for " + testMethod.getName());
+		 * annotation.setEnabled(false); }
+		 */
 
 	}
 
