@@ -15,7 +15,9 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 		// TODO Auto-generated method stub
 
 		// System.out.println(System.getenv("getvehiclemakesTest"));
-		System.out.println(System.getenv("All"));
+		// System.out.println(System.getenv("All"));
+
+		System.out.println(annotation.getEnabled());
 
 		if (!annotation.getEnabled()) {
 			System.out.println(testClass != null ? testClass : testMethod);
