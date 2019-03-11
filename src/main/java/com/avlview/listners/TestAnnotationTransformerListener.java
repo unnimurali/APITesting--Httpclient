@@ -19,9 +19,9 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 
 		// System.out.println(annotation.getEnabled());
 
-		// if (!annotation.getEnabled()) {
-		// System.out.println(testClass != null ? testClass : testMethod);
-		// }
+		if (!annotation.getEnabled()) {
+			System.out.println(testClass != null ? testClass : testMethod);
+		}
 
 		/*
 		 * if (!annotation.getEnabled() && System.getenv("All").contains("false")) {
