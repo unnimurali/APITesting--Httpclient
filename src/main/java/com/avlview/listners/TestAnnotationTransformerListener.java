@@ -18,24 +18,18 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 		// System.out.println(System.getenv("All"));
 
 		System.out.println(annotation.getEnabled());
-		System.out.println(testMethod.getName().getClass());
-
-		if (System.getenv("All").contains("true")) {
-			System.out.println("inside all");
-
-			System.out.println(testMethod.getName().getClass());
-
-		}
 
 		/*
 		 * if (!annotation.getEnabled() && System.getenv("All").contains("false")) {
 		 * System.out.println("all"); annotation.setEnabled(false); }
 		 */
 
-		if (testMethod.getName().equals("getvehiclemakes") && System.getenv("getvehiclemakesTest").contains("false")) {
+		if (System.getenv("getvehiclemakesTest").contains("false")) {
 			System.out.println("Disable " + testMethod.getName());
 			annotation.setEnabled(false);
-		} else if (testMethod.getName().equals("getapnlistbycountryid")
+		}
+
+		if (testMethod.getName().equals("getapnlistbycountryid")
 				&& System.getenv("getapnlistbycountryidTest").contains("false")) {
 			System.out.println("Disable " + testMethod.getName());
 			annotation.setEnabled(false);
