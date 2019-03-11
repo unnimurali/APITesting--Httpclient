@@ -42,10 +42,11 @@ public class getvehiclemakesTest extends TestBase {
 
 		url = serviceurl + apiurl;
 
-		System.out.println(System.getenv("getvehiclemakesTest"));
-		runstatus = System.getenv("getvehiclemakesTest");
-		status = Boolean.parseBoolean(runstatus);
-		System.out.println(status);
+		/*
+		 * System.out.println(System.getenv("getvehiclemakesTest")); runstatus =
+		 * System.getenv("getvehiclemakesTest"); status =
+		 * Boolean.parseBoolean(runstatus); System.out.println(status);
+		 */
 
 	}
 

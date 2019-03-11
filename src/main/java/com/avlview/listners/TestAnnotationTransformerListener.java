@@ -15,16 +15,13 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 		// TODO Auto-generated method stub
 
 		System.out.println(System.getenv("getvehiclemakesTest"));
-		runstatus = System.getenv("getvehiclemakesTest");
-		status = Boolean.parseBoolean(runstatus);
-		System.out.println(status);
+		// runstatus = System.getenv("getvehiclemakesTest");
+		// status = Boolean.parseBoolean(runstatus);
+		// System.out.println(status);
 
-		if (status = true) {
-			annotation.setEnabled(true);
-			System.out.println("inside true");
-		} else {
+		if (testMethod.getName().equals("getvehiclemakes") && System.getenv("getvehiclemakesTest").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
 			annotation.setEnabled(false);
-			System.out.println("inside false");
 		}
 
 	}
