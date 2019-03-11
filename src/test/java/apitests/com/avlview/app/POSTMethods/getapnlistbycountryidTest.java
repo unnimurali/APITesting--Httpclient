@@ -47,7 +47,7 @@ public class getapnlistbycountryidTest extends TestBase {
 
 	}
 
-	@Test(enabled = true, groups = { "Post Requests" })
+	@Test(groups = { "Post Requests" })
 	public void getapnlistbycountryid()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 
