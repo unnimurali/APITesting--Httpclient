@@ -26,9 +26,8 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 				&& System.getenv("getapnlistbycountryidTest").contains("false")) {
 			System.out.println("set data provider for " + testMethod.getName());
 			annotation.setEnabled(false);
-		} else if (System.getenv("All") != null && !System.getenv("All").isEmpty()
-				&& System.getenv("All").contains("All")) {
-			annotation.setEnabled(true);
+		} else if (System.getenv("All").contains("false")) {
+			annotation.setEnabled(false);
 		}
 
 	}
