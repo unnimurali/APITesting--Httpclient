@@ -16,21 +16,26 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 
 		System.out.println(System.getenv("getvehiclemakesTest"));
 		System.out.println(System.getenv("All"));
+		System.out.println(testMethod.getName().isEmpty());
 		// runstatus = System.getenv("getvehiclemakesTest");
 		// status = Boolean.parseBoolean(runstatus);
 		// System.out.println(status);
 
-		if (testMethod.getName().equals("getvehiclemakes") && System.getenv("getvehiclemakesTest").contains("false")) {
-			System.out.println("Disable " + testMethod.getName());
-			annotation.setEnabled(false);
-		} else if (testMethod.getName().equals("getapnlistbycountryid")
-				&& System.getenv("getapnlistbycountryidTest").contains("false")) {
-			System.out.println("set data provider for " + testMethod.getName());
-			annotation.setEnabled(false);
-		} else if (testMethod.getName().equals("getvehiclemakes") && System.getenv("All").contains("false")) {
+		if (System.getenv("All").contains("false")) {
 			System.out.println("all");
 			annotation.setEnabled(false);
 		}
+
+		/*
+		 * if (testMethod.getName().equals("getvehiclemakes") &&
+		 * System.getenv("getvehiclemakesTest").contains("false")) {
+		 * System.out.println("Disable " + testMethod.getName());
+		 * annotation.setEnabled(false); } else if
+		 * (testMethod.getName().equals("getapnlistbycountryid") &&
+		 * System.getenv("getapnlistbycountryidTest").contains("false")) {
+		 * System.out.println("set data provider for " + testMethod.getName());
+		 * annotation.setEnabled(false); }
+		 */
 
 	}
 
