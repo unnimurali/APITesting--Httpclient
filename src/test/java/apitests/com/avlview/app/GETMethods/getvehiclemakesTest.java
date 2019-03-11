@@ -40,6 +40,8 @@ public class getvehiclemakesTest extends TestBase {
 
 		url = serviceurl + apiurl;
 
+		System.out.println(System.getenv("getvehiclemakesTest"));
+
 	}
 
 	@Test(enabled = true, groups = { "GetRequests" })

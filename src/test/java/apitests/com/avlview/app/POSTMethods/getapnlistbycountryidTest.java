@@ -43,6 +43,8 @@ public class getapnlistbycountryidTest extends TestBase {
 		url = serviceurl + apiposturl;
 		System.out.println(url);
 
+		System.out.println(System.getenv("getapnlistbycountryidTest"));
+
 	}
 
 	@Test(enabled = true, groups = { "Post Requests" })
