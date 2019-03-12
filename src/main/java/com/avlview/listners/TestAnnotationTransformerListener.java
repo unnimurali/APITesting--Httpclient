@@ -27,8 +27,8 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 
 		if (System.getenv("All").contains("true")) {
 			System.out.println("inside all");
-			System.setProperty("getvehiclemakesTest", "true");
-			System.setProperty("getapnlistbycountryid", "true");
+			// System.setProperty("getvehiclemakesTest", "true");
+			// System.setProperty("getapnlistbycountryid", "true");
 			annotation.setEnabled(true);
 
 		}
