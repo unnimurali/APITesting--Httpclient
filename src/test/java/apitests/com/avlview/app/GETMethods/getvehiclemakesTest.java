@@ -50,7 +50,7 @@ public class getvehiclemakesTest extends TestBase {
 
 	}
 
-	@Test(groups = { "GetRequests" })
+	@Test(enabled = true, groups = { "GetRequests" })
 	public void getvehiclemakes()
 			throws ClientProtocolException, IOException, SAXException, ParserConfigurationException {
 

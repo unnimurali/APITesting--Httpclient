@@ -18,7 +18,7 @@
 		<classes>
 
 			<class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest" />
-			<!-- <class name="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest" />
+			<class name="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest" />
 			<class name="apitests.com.avlview.app.GETMethods.getdevicesTest" />
 			<class name="apitests.com.avlview.app.GETMethods.getvehicletypesTest" />
 			<class name="apitests.com.avlview.app.GETMethods.gettimezonesTest" />
@@ -49,7 +49,7 @@
 			<class
 				name="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest" />
 			<class name="apitests.com.avlview.app.GETMethods.removeTaskTest" />
-			<class name="apitests.com.avlview.app.GETMethods.updateodometerTest" /> -->
+			<class name="apitests.com.avlview.app.GETMethods.updateodometerTest" />
 
 
 		</classes>

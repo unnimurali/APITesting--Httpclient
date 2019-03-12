@@ -41,8 +41,8 @@ public class removeTaskTest extends TestBase {
 	}
 
 	@Test(enabled = true, groups = { "GetRequests" })
-	public void getAllDriverDispatchTasks() throws ClientProtocolException, IOException, SAXException,
-			ParserConfigurationException, URISyntaxException {
+	public void removeTask() throws ClientProtocolException, IOException, SAXException, ParserConfigurationException,
+			URISyntaxException {
 
 		restclient = new RestClient();
 
