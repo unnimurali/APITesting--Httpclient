@@ -19,7 +19,8 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 
 		// System.out.println(annotation.getEnabled());
 
-		System.out.println(testMethod.getName().toString());
+		// System.out.println(testMethod.getName().toString());
+		System.out.println(testClass.getClasses().toString());
 
 		/*
 		 * if (!annotation.getEnabled() && System.getenv("All").contains("false")) {
@@ -36,6 +37,14 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 			System.out.println("Disable " + testMethod.getName());
 			annotation.setEnabled(false);
 		}
+
+		/*
+		 * if (System.getenv("All").contains("true")) {
+		 * 
+		 * 
+		 * 
+		 * }
+		 */
 
 	}
 
