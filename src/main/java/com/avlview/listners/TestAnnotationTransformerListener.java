@@ -25,12 +25,11 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 			annotation.setEnabled(false);
 		}
 
-		// if (System.getenv("All").contains("true")) {
-		// System.out.println("inside all");
+		if (System.getenv("All").contains("true")) {
+			System.out.println("inside all");
 
-		// annotation.setEnabled(true);
-
-		// }
+			annotation.setEnabled(true);
+		}
 
 	}
 
