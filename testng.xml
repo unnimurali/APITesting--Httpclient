@@ -65,9 +65,9 @@
 
 		<classes>
 
-			<class
-				name="apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest" />
 			<!-- <class
+				name="apitests.com.avlview.app.POSTMethods.getapnlistbycountryidTest" />
+			 <class
 				name="apitests.com.avlview.app.POSTMethods.getapnlistbyvehicleidTest" />
 			<class name="apitests.com.avlview.app.POSTMethods.getvehiclesbyplanTest" />
 			<class
