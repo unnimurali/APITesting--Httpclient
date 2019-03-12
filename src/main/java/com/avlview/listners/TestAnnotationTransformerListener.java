@@ -150,12 +150,191 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 			annotation.setEnabled(false);
 		}
 
-		/*
-		 * if (testMethod.getName().equals("getapnlistbycountryid") &&
-		 * System.getenv("getapnlistbycountryidTest").contains("false")) {
-		 * System.out.println("Disable " + testMethod.getName());
-		 * annotation.setEnabled(false); }
-		 */
+		// post
+
+		if (testMethod.getName().equals("getapnlistbycountryid")
+				&& System.getenv("getapnlistbycountryid").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getapnlistbyvehicleid")
+				&& System.getenv("getapnlistbyvehicleid").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesbyplan") && System.getenv("getvehiclesbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclecurrentlocation")
+				&& System.getenv("getvehiclecurrentlocation").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehicleoverviewbyplan")
+				&& System.getenv("getvehicleoverviewbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesnapshotinaccountbyplan")
+				&& System.getenv("getvehiclesnapshotinaccountbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesnapshot")
+				&& System.getenv("getvehiclesnapshot").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getstoppedvehiclesbyplan")
+				&& System.getenv("getstoppedvehiclesbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getmovingvehiclesbyplan")
+				&& System.getenv("getmovingvehiclesbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesoutofnetworkbyplan")
+				&& System.getenv("getvehiclesoutofnetworkbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getdisconnectedvehiclesbyplan")
+				&& System.getenv("getdisconnectedvehiclesbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesnapshotbydate")
+				&& System.getenv("getvehiclesnapshotbydate").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclehistory") && System.getenv("getvehiclehistory").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getnearbyvehicles") && System.getenv("getnearbyvehicles").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getnearbyvehiclesbyplan")
+				&& System.getenv("getnearbyvehiclesbyplan").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getstoppagedetails")
+				&& System.getenv("getstoppagedetails").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclesnapshotinaccountSG")
+				&& System.getenv("getvehiclesnapshotinaccountSG").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getWaypoints") && System.getenv("getWaypoints").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getAlertDetail") && System.getenv("getAlertDetail").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getTripDetails") && System.getenv("getTripDetails").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getidlereport") && System.getenv("getidlereport").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getdailysummaryreport")
+				&& System.getenv("getdailysummaryreport").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getSummaryReport") && System.getenv("getSummaryReport").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getRawDataInTimeRange")
+				&& System.getenv("getRawDataInTimeRange").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getactivevehiclesnapshotinaccountSG")
+				&& System.getenv("getactivevehiclesnapshotinaccountSG").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("gettripdetailsSG") && System.getenv("gettripdetailsSG").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("getvehiclehistorySG")
+				&& System.getenv("getvehiclehistorySG").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("addgroup") && System.getenv("addgroup").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("adddriver") && System.getenv("adddriver").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("saveFenceZone") && System.getenv("saveFenceZone").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("addorgunit") && System.getenv("addorgunit").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("createDriverDispatchTask")
+				&& System.getenv("createDriverDispatchTask").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
+
+		if (testMethod.getName().equals("addvehicle") && System.getenv("addvehicle").contains("false")) {
+			System.out.println("Disable " + testMethod.getName());
+			annotation.setEnabled(false);
+		}
 
 		if (System.getenv("All").contains("true")) {
 
