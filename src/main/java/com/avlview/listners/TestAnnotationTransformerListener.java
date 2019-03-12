@@ -14,19 +14,6 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 	public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 		// TODO Auto-generated method stub
 
-		// System.out.println(System.getenv("getvehiclemakesTest"));
-		// System.out.println(System.getenv("All"));
-
-		// System.out.println(annotation.getEnabled());
-
-		// System.out.println(testMethod.getName().toString());
-		System.out.println(testClass.getClasses().toString());
-
-		/*
-		 * if (!annotation.getEnabled() && System.getenv("All").contains("false")) {
-		 * System.out.println("all"); annotation.setEnabled(false); }
-		 */
-
 		if (testMethod.getName().equals("getvehiclemakes") && System.getenv("getvehiclemakesTest").contains("false")) {
 			// System.out.println("Disable " + testMethod.getName());
 			annotation.setEnabled(false);
@@ -38,13 +25,13 @@ public class TestAnnotationTransformerListener implements IAnnotationTransformer
 			annotation.setEnabled(false);
 		}
 
-		/*
-		 * if (System.getenv("All").contains("true")) {
-		 * 
-		 * 
-		 * 
-		 * }
-		 */
+		if (System.getenv("All").contains("true")) {
+			System.out.println("inside all");
+			System.setProperty("getvehiclemakesTest", "true");
+			System.setProperty("getapnlistbycountryid", "true");
+			annotation.setEnabled(true);
+
+		}
 
 	}
 
