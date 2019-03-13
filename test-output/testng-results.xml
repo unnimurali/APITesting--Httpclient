@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6512" started-at="2019-03-11T06:23:34Z" finished-at="2019-03-11T06:23:40Z">
+  <suite name="Default suite" duration-ms="3641" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
     <groups>
       <group name="GetRequests">
-        <method signature="getvehiclemakesTest.getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@bbd20a]" name="getvehiclemakes" class="apitests.com.avlview.app.GETMethods.getvehiclemakesTest"/>
+        <method signature="getVehicleRawDetailsTest.getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="getVehicleRawDetails" class="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest"/>
       </group> <!-- GetRequests -->
     </groups>
-    <test name="Default test" duration-ms="6512" started-at="2019-03-11T06:23:34Z" finished-at="2019-03-11T06:23:40Z">
-      <class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@bbd20a]" name="setup" is-config="true" duration-ms="82" started-at="2019-03-11T06:23:34Z" finished-at="2019-03-11T06:23:34Z">
+    <test name="Default test" duration-ms="3641" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
+      <class name="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="setup" is-config="true" duration-ms="19" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@bbd20a]" name="getvehiclemakes" duration-ms="6198" started-at="2019-03-11T06:23:34Z" finished-at="2019-03-11T06:23:40Z">
+        <test-method status="PASS" signature="getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="getVehicleRawDetails" duration-ms="3481" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getvehiclemakes -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemakesTest -->
+        </test-method> <!-- getVehicleRawDetails -->
+      </class> <!-- apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

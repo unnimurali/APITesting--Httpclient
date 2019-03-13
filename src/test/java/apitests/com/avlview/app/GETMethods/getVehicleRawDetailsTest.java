@@ -94,6 +94,9 @@ public class getVehicleRawDetailsTest extends TestBase {
 
 			fDate = prop.getProperty("fromDate");
 			tDate = prop.getProperty("toDate");
+
+			System.out.println(fDate);
+			System.out.println(tDate);
 		}
 
 		URIBuilder builder = new URIBuilder();
