@@ -31,6 +31,8 @@ public class removeTaskTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
+	String tid;
+
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
@@ -47,7 +49,14 @@ public class removeTaskTest extends TestBase {
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
+
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
+		}
+
 		headers.put("Accept", prop.getProperty("Accept"));
 
 		int firstIndex = serviceurl.indexOf(':');
@@ -59,9 +68,18 @@ public class removeTaskTest extends TestBase {
 		String host = url.substring(startIndex, endIndex - 1);
 		String setpath = prop.getProperty("removeTask");
 
+		if (System.getenv("Taskid") != null && !System.getenv("Taskid").isEmpty()) {
+			System.out.println(System.getenv("Taskid"));
+			tid = System.getenv("Taskid");
+		} else {
+			tid = prop.getProperty("taskId");
+		}
+
 		URIBuilder builder = new URIBuilder();
 
-		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("taskId", prop.getProperty("taskId"));
+		// builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("taskId",
+		// prop.getProperty("taskId"));
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("taskId", tid);
 
 		URI uri = builder.build();
 		System.out.println(uri);
