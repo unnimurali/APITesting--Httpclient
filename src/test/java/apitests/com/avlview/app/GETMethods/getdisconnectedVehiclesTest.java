@@ -53,7 +53,14 @@ public class getdisconnectedVehiclesTest extends TestBase {
 
 		HashMap<String, String> headers = new HashMap<String, String>();
 
-		headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		}
+
+		// headers.put("apiKey", prop.getProperty("apiKey_Get"));
 
 		httpresponse = restclient.get(url, headers);
 

@@ -51,7 +51,15 @@ public class getTransportationAlertsTest extends TestBase {
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("apiKey", prop.getProperty("apiKey_Schoolbus"));
+
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Schoolbus"));
+		}
+
+		// headers.put("apiKey", prop.getProperty("apiKey_Schoolbus"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
 		int firstIndex = serviceurl.indexOf(':');

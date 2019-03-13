@@ -34,6 +34,9 @@ public class getVehicleRawDetailsTest extends TestBase {
 
 	JSONObject xmlJSONObj;
 	String responseString;
+	String vId;
+	String fDate;
+	String tDate;
 
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
@@ -51,7 +54,15 @@ public class getVehicleRawDetailsTest extends TestBase {
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("apiKey", prop.getProperty("apiKey_Get"));
+
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		}
+
+		// headers.put("apiKey", prop.getProperty("apiKey_Get"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
 		int firstIndex = serviceurl.indexOf(':');
@@ -63,12 +74,33 @@ public class getVehicleRawDetailsTest extends TestBase {
 		String host = url.substring(startIndex, endIndex - 1);
 		String setpath = prop.getProperty("getVehicleRawDetails");
 
+		if (System.getenv("vehicleId") != null && !System.getenv("vehicleId").isEmpty()
+				&& System.getenv("fromDate") != null && !System.getenv("fromDate").isEmpty()
+				&& System.getenv("toDate") != null && !System.getenv("toDate").isEmpty()) {
+			System.out.println(System.getenv("vehicleId"));
+			System.out.println(System.getenv("fromDate"));
+			System.out.println(System.getenv("toDate"));
+			vId = System.getenv("vehicleId");
+			fDate = System.getenv("fromDate");
+			tDate = System.getenv("toDate");
+
+		} else {
+			vId = prop.getProperty("Vehicleid");
+			fDate = prop.getProperty("fromDate");
+			tDate = prop.getProperty("toDate");
+		}
+
 		URIBuilder builder = new URIBuilder();
 
-		builder.setScheme(scheme).setHost(host).setPath(setpath)
-				.setParameter("vehicleId", prop.getProperty("Vehicleid"))
-				.setParameter("fromDate", prop.getProperty("fromDate"))
-				.setParameter("toDate", prop.getProperty("toDate"));
+		/*
+		 * builder.setScheme(scheme).setHost(host).setPath(setpath)
+		 * .setParameter("vehicleId", prop.getProperty("Vehicleid"))
+		 * .setParameter("fromDate", prop.getProperty("fromDate"))
+		 * .setParameter("toDate", prop.getProperty("toDate"));
+		 */
+
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("vehicleId", vId)
+				.setParameter("fromDate", fDate).setParameter("toDate", tDate);
 
 		URI uri = builder.build();
 
@@ -86,10 +118,12 @@ public class getVehicleRawDetailsTest extends TestBase {
 		Assert.assertEquals(result, testbase.RESPONSE_STATUS_CODE_200);
 
 		String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
-		Assert.assertEquals(id, "19838");
+		System.out.println(id);
+		// Assert.assertEquals(id, "19838");
 
 		String name = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleName");
-		Assert.assertEquals(name, "KL 11 AF 9678");
+		System.out.println(name);
+		// Assert.assertEquals(name, "KL 11 AF 9678");
 
 		JSONArray vmodelArray = responsejson.getJSONArray("vehiclerRawDetail");
 		// System.out.println("values from devices: " + spellingsArray);
