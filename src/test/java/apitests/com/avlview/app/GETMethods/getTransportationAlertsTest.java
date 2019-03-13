@@ -34,6 +34,9 @@ public class getTransportationAlertsTest extends TestBase {
 
 	JSONObject xmlJSONObj;
 	String responseString;
+	String vId;
+	String fDate;
+	String tDate;
 
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
@@ -71,12 +74,42 @@ public class getTransportationAlertsTest extends TestBase {
 		String host = url.substring(startIndex, endIndex - 1);
 		String setpath = prop.getProperty("getTransportationAlerts");
 
+		if (System.getenv("vehicleId") != null && !System.getenv("vehicleId").isEmpty()) {
+			System.out.println(System.getenv("vehicleId"));
+			vId = System.getenv("vehicleId");
+		} else {
+			vId = prop.getProperty("Vehicleid");
+		}
+
+		if (System.getenv("fromDate") != null && !System.getenv("fromDate").isEmpty() && System.getenv("toDate") != null
+				&& !System.getenv("toDate").isEmpty()) {
+
+			System.out.println(System.getenv("fromDate"));
+			System.out.println(System.getenv("toDate"));
+
+			fDate = System.getenv("fromDate");
+			tDate = System.getenv("toDate");
+
+		} else {
+
+			fDate = prop.getProperty("fromDate");
+			tDate = prop.getProperty("toDate");
+
+			System.out.println(fDate);
+			System.out.println(tDate);
+		}
+
 		URIBuilder builder = new URIBuilder();
 
-		builder.setScheme(scheme).setHost(host).setPath(setpath)
-				.setParameter("vehicleId", prop.getProperty("Vehicleid_Schoolbus"))
-				.setParameter("fromDate", prop.getProperty("fromDate"))
-				.setParameter("toDate", prop.getProperty("toDate"));
+		/*
+		 * builder.setScheme(scheme).setHost(host).setPath(setpath)
+		 * .setParameter("vehicleId", prop.getProperty("Vehicleid_Schoolbus"))
+		 * .setParameter("fromDate", prop.getProperty("fromDate"))
+		 * .setParameter("toDate", prop.getProperty("toDate"));
+		 */
+
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("vehicleId", vId)
+				.setParameter("fromDate", fDate).setParameter("toDate", tDate);
 
 		URI uri = builder.build();
 
