@@ -35,6 +35,10 @@ public class getAllDriverDispatchTasksTest extends TestBase {
 	JSONObject xmlJSONObj;
 	String responseString;
 
+	String dId;
+	String fDate;
+	String tDate;
+
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		testbase = new TestBase();
@@ -51,7 +55,15 @@ public class getAllDriverDispatchTasksTest extends TestBase {
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
+
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
+		}
+
+		// headers.put("apiKey", prop.getProperty("apiKey_Odometer"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
 		int firstIndex = serviceurl.indexOf(':');
@@ -63,12 +75,42 @@ public class getAllDriverDispatchTasksTest extends TestBase {
 		String host = url.substring(startIndex, endIndex - 1);
 		String setpath = prop.getProperty("getAllDriverDispatchTasks");
 
+		if (System.getenv("driverId") != null && !System.getenv("driverId").isEmpty()) {
+			System.out.println(System.getenv("driverId"));
+			dId = System.getenv("driverId");
+		} else {
+			dId = prop.getProperty("driverId");
+		}
+
+		if (System.getenv("fromDate") != null && !System.getenv("fromDate").isEmpty() && System.getenv("toDate") != null
+				&& !System.getenv("toDate").isEmpty()) {
+
+			System.out.println(System.getenv("fromDate"));
+			System.out.println(System.getenv("toDate"));
+
+			fDate = System.getenv("fromDate");
+			tDate = System.getenv("toDate");
+
+		} else {
+
+			fDate = prop.getProperty("task_fromDate");
+			tDate = prop.getProperty("task_toDate");
+
+			System.out.println(fDate);
+			System.out.println(tDate);
+		}
+
 		URIBuilder builder = new URIBuilder();
 
-		builder.setScheme(scheme).setHost(host).setPath(setpath)
-				.setParameter("fromDateTime", prop.getProperty("task_fromDate"))
-				.setParameter("toDateTime", prop.getProperty("task_toDate"))
-				.setParameter("driverId", prop.getProperty("driverId"));
+		/*
+		 * builder.setScheme(scheme).setHost(host).setPath(setpath)
+		 * .setParameter("fromDateTime", prop.getProperty("task_fromDate"))
+		 * .setParameter("toDateTime", prop.getProperty("task_toDate"))
+		 * .setParameter("driverId", prop.getProperty("driverId"));
+		 */
+
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("fromDate", fDate)
+				.setParameter("toDate", tDate).setParameter("driverId", dId);
 
 		URI uri = builder.build();
 		System.out.println(uri);

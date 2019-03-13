@@ -126,18 +126,20 @@ public class getVehicleRawDetailsTest extends TestBase {
 		int result = Integer.parseInt(status);
 		Assert.assertEquals(result, testbase.RESPONSE_STATUS_CODE_200);
 
-		String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
-		System.out.println(id);
-		// Assert.assertEquals(id, "19838");
-
-		String name = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleName");
-		System.out.println(name);
-		// Assert.assertEquals(name, "KL 11 AF 9678");
-
 		JSONArray vmodelArray = responsejson.getJSONArray("vehiclerRawDetail");
 		// System.out.println("values from devices: " + spellingsArray);
 		int cnt = vmodelArray.length();
 		System.out.println(cnt);
+
+		if (cnt >= 1) {
+			String id = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleId");
+			System.out.println(id);
+			// Assert.assertEquals(id, "19838");
+
+			String name = TestUtil.getValueByJPath(responsejson, "/vehiclerRawDetail[0]/vehicleName");
+			System.out.println(name);
+			// Assert.assertEquals(name, "KL 11 AF 9678");
+		}
 
 		Header[] headersarray = httpresponse.getAllHeaders();
 		HashMap<String, String> allheaders = new HashMap<String, String>();
