@@ -74,18 +74,24 @@ public class getVehicleRawDetailsTest extends TestBase {
 		String host = url.substring(startIndex, endIndex - 1);
 		String setpath = prop.getProperty("getVehicleRawDetails");
 
-		if ((System.getenv("vehicleId") != null || !System.getenv("vehicleId").isEmpty())
-				&& System.getenv("fromDate") != null && !System.getenv("fromDate").isEmpty()
-				&& System.getenv("toDate") != null && !System.getenv("toDate").isEmpty()) {
+		if (System.getenv("vehicleId") != null && !System.getenv("vehicleId").isEmpty()) {
 			System.out.println(System.getenv("vehicleId"));
+			vId = System.getenv("vehicleId");
+		} else {
+			vId = prop.getProperty("Vehicleid");
+		}
+
+		if (System.getenv("fromDate") != null && !System.getenv("fromDate").isEmpty() && System.getenv("toDate") != null
+				&& !System.getenv("toDate").isEmpty()) {
+
 			System.out.println(System.getenv("fromDate"));
 			System.out.println(System.getenv("toDate"));
-			vId = System.getenv("vehicleId");
+
 			fDate = System.getenv("fromDate");
 			tDate = System.getenv("toDate");
 
 		} else {
-			vId = prop.getProperty("Vehicleid");
+
 			fDate = prop.getProperty("fromDate");
 			tDate = prop.getProperty("toDate");
 		}
