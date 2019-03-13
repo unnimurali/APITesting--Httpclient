@@ -51,7 +51,15 @@ public class getvehiclemodelsTest extends TestBase {
 		restclient = new RestClient();
 
 		HashMap<String, String> headers = new HashMap<String, String>();
-		headers.put("apiKey", prop.getProperty("apiKey_Get"));
+
+		if (System.getenv("ApiKey") != null && !System.getenv("ApiKey").isEmpty()) {
+			System.out.println(System.getenv("ApiKey"));
+			headers.put("apiKey", System.getenv("ApiKey"));
+		} else {
+			headers.put("apiKey", prop.getProperty("apiKey_Get"));
+		}
+
+		// headers.put("apiKey", prop.getProperty("apiKey_Get"));
 		headers.put("Accept", prop.getProperty("Accept"));
 
 		int firstIndex = serviceurl.indexOf(':');
