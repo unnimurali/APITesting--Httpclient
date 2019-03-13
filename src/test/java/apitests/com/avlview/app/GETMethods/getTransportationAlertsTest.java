@@ -126,16 +126,18 @@ public class getTransportationAlertsTest extends TestBase {
 		int result = Integer.parseInt(status);
 		Assert.assertEquals(result, testbase.RESPONSE_STATUS_CODE_200);
 
-		String id = TestUtil.getValueByJPath(responsejson, "/schoolAlertlist[0]/alertDescription");
-		System.out.println(id);
-
-		String name = TestUtil.getValueByJPath(responsejson, "/schoolAlertlist[0]/alertMessage");
-		System.out.println(name);
-
 		JSONArray vmodelArray = responsejson.getJSONArray("schoolAlertlist");
 		// System.out.println("values from devices: " + spellingsArray);
 		int cnt = vmodelArray.length();
 		System.out.println(cnt);
+
+		if (cnt >= 1) {
+			String id = TestUtil.getValueByJPath(responsejson, "/schoolAlertlist[0]/alertDescription");
+			System.out.println(id);
+
+			String name = TestUtil.getValueByJPath(responsejson, "/schoolAlertlist[0]/alertMessage");
+			System.out.println(name);
+		}
 
 		Header[] headersarray = httpresponse.getAllHeaders();
 		HashMap<String, String> allheaders = new HashMap<String, String>();
