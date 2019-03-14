@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3641" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
+  <suite name="Default suite" duration-ms="7907" started-at="2019-03-14T04:43:23Z" finished-at="2019-03-14T04:43:31Z">
     <groups>
       <group name="GetRequests">
-        <method signature="getVehicleRawDetailsTest.getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="getVehicleRawDetails" class="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest"/>
+        <method signature="getAllDriverDispatchTasksTest.getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@bbd20a]" name="getAllDriverDispatchTasks" class="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest"/>
       </group> <!-- GetRequests -->
     </groups>
-    <test name="Default test" duration-ms="3641" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
-      <class name="apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="setup" is-config="true" duration-ms="19" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:38Z">
+    <test name="Default test" duration-ms="7907" started-at="2019-03-14T04:43:23Z" finished-at="2019-03-14T04:43:31Z">
+      <class name="apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@bbd20a]" name="setup" is-config="true" duration-ms="35" started-at="2019-03-14T04:43:23Z" finished-at="2019-03-14T04:43:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getVehicleRawDetails()[pri:0, instance:apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest@bbd20a]" name="getVehicleRawDetails" duration-ms="3481" started-at="2019-03-13T09:33:38Z" finished-at="2019-03-13T09:33:41Z">
+        <test-method status="PASS" signature="getAllDriverDispatchTasks()[pri:0, instance:apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest@bbd20a]" name="getAllDriverDispatchTasks" duration-ms="7701" started-at="2019-03-14T04:43:23Z" finished-at="2019-03-14T04:43:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getVehicleRawDetails -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getVehicleRawDetailsTest -->
+        </test-method> <!-- getAllDriverDispatchTasks -->
+      </class> <!-- apitests.com.avlview.app.GETMethods.getAllDriverDispatchTasksTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

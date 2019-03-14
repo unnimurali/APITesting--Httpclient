@@ -109,8 +109,8 @@ public class getAllDriverDispatchTasksTest extends TestBase {
 		 * .setParameter("driverId", prop.getProperty("driverId"));
 		 */
 
-		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("fromDate", fDate)
-				.setParameter("toDate", tDate).setParameter("driverId", dId);
+		builder.setScheme(scheme).setHost(host).setPath(setpath).setParameter("fromDateTime", fDate)
+				.setParameter("toDateTime", tDate).setParameter("driverId", dId);
 
 		URI uri = builder.build();
 		System.out.println(uri);
