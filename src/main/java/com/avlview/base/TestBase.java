@@ -18,7 +18,10 @@ public class TestBase {
 
 	public Properties prop;
 
-	public ExtentReports rep = com.avlview.ExtentReporterListner.ExtentManager.getInstance();
+	// public ExtentReports rep =
+	// com.avlview.ExtentReporterListner.ExtentManager.getInstance();
+	public ExtentReports rep = com.avlview.ExtentReporterListner.ExtentReporterNG.getInstance();
+
 	public static ExtentTest test;
 
 	public TestBase() {

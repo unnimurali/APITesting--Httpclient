@@ -18,11 +18,27 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 public class ExtentReporterNG implements IReporter {
-	private ExtentReports extent;
+
+	// private ExtentReports extent;
+	private static ExtentReports extent;
+
+	public static ExtentReports getInstance() {
+
+		if (extent == null) {
+
+			extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
+			extent.addSystemInfo("Host Name", "Murali");
+			extent.addSystemInfo("User Name", "mkrishnan");
+			extent.addSystemInfo("Environment", "QA");
+
+		}
+		return extent;
+	}
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites, String outputDirectory) {
 		// extent = new ExtentReports(outputDirectory + File.separator + "Extent.html",
 		// true);
+
 		extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/ExtentReport.html", true);
 
 		for (ISuite suite : suites) {

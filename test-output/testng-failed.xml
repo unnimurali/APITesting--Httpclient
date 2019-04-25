@@ -11,11 +11,12 @@
       </run>
     </groups>
     <classes>
-      <class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest">
+      <class name="apitests.com.avlview.app.GETMethods.getvehicletypesTest">
         <methods>
-          <include name="getvehiclemakes"/>
+          <include name="getvehicletypes"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemakesTest -->
+      </class> <!-- apitests.com.avlview.app.GETMethods.getvehicletypesTest -->
     </classes>
   </test> <!-- Get Requests(failed) -->
 </suite> <!-- Failed suite [Suite] -->
