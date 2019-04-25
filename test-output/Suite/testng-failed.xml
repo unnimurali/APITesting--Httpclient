@@ -4,19 +4,25 @@
   <listeners>
     <listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Get Requests(failed)">
+  <test thread-count="5" name="Post Requests(failed)">
     <groups>
       <run>
-        <include name="GetRequests"/>
+        <include name="Post Requests"/>
       </run>
     </groups>
     <classes>
-      <class name="apitests.com.avlview.app.GETMethods.getvehicletypesTest">
+      <class name="apitests.com.avlview.app.POSTMethods.addvehicleTest">
         <methods>
-          <include name="getvehicletypes"/>
+          <include name="addvehicle"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- apitests.com.avlview.app.GETMethods.getvehicletypesTest -->
+      </class> <!-- apitests.com.avlview.app.POSTMethods.addvehicleTest -->
+      <class name="apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest">
+        <methods>
+          <include name="setup"/>
+          <include name="gettripdetailsSG"/>
+        </methods>
+      </class> <!-- apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest -->
     </classes>
-  </test> <!-- Get Requests(failed) -->
+  </test> <!-- Post Requests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

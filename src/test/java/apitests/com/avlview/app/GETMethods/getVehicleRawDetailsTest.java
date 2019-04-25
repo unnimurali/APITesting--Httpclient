@@ -113,6 +113,8 @@ public class getVehicleRawDetailsTest extends TestBase {
 
 		URI uri = builder.build();
 
+		System.out.println(uri);
+
 		httpresponse = restclient.getparameter(uri, headers);
 
 		int statuscode = httpresponse.getStatusLine().getStatusCode();

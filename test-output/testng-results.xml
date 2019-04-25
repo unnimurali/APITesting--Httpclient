@@ -1,48 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="33" total="36" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="2860" started-at="2019-04-08T09:14:14Z" finished-at="2019-04-08T09:14:17Z">
+  <suite name="Default suite" duration-ms="1741" started-at="2019-04-25T10:29:31Z" finished-at="2019-04-25T10:29:33Z">
     <groups>
       <group name="GetRequests">
-        <method signature="getdevicesTest.getdevices()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@1d0c81b]" name="getdevices" class="apitests.com.avlview.app.GETMethods.getdevicesTest"/>
-        <method signature="getvehiclemakesTest.getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@186dec2]" name="getvehiclemakes" class="apitests.com.avlview.app.GETMethods.getvehiclemakesTest"/>
-        <method signature="getvehiclemodelsTest.getvehiclemodels()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@650e52]" name="getvehiclemodels" class="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest"/>
+        <method signature="removeTaskTest.removeTask()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@bbd20a]" name="removeTask" class="apitests.com.avlview.app.GETMethods.removeTaskTest"/>
       </group> <!-- GetRequests -->
     </groups>
-    <test name="Get Requests" duration-ms="2770" started-at="2019-04-08T09:14:14Z" finished-at="2019-04-08T09:14:17Z">
-      <class name="apitests.com.avlview.app.GETMethods.getdevicesTest">
-        <test-method status="PASS" signature="getdevices()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@1d0c81b]" name="getdevices" duration-ms="585" started-at="2019-04-08T09:14:16Z" finished-at="2019-04-08T09:14:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getdevices -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getdevicesTest@1d0c81b]" name="setup" is-config="true" duration-ms="0" started-at="2019-04-08T09:14:16Z" finished-at="2019-04-08T09:14:16Z">
+    <test name="Default test" duration-ms="1741" started-at="2019-04-25T10:29:31Z" finished-at="2019-04-25T10:29:33Z">
+      <class name="apitests.com.avlview.app.GETMethods.removeTaskTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@bbd20a]" name="setup" is-config="true" duration-ms="19" started-at="2019-04-25T10:29:31Z" finished-at="2019-04-25T10:29:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getdevicesTest -->
-      <class name="apitests.com.avlview.app.GETMethods.getvehiclemodelsTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@650e52]" name="setup" is-config="true" duration-ms="0" started-at="2019-04-08T09:14:16Z" finished-at="2019-04-08T09:14:16Z">
+        <test-method status="PASS" signature="removeTask()[pri:0, instance:apitests.com.avlview.app.GETMethods.removeTaskTest@bbd20a]" name="removeTask" duration-ms="1650" started-at="2019-04-25T10:29:31Z" finished-at="2019-04-25T10:29:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclemodels()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemodelsTest@650e52]" name="getvehiclemodels" duration-ms="567" started-at="2019-04-08T09:14:16Z" finished-at="2019-04-08T09:14:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getvehiclemodels -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemodelsTest -->
-      <class name="apitests.com.avlview.app.GETMethods.getvehiclemakesTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@186dec2]" name="setup" is-config="true" duration-ms="20" started-at="2019-04-08T09:14:14Z" finished-at="2019-04-08T09:14:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getvehiclemakes()[pri:0, instance:apitests.com.avlview.app.GETMethods.getvehiclemakesTest@186dec2]" name="getvehiclemakes" duration-ms="1512" started-at="2019-04-08T09:14:14Z" finished-at="2019-04-08T09:14:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getvehiclemakes -->
-      </class> <!-- apitests.com.avlview.app.GETMethods.getvehiclemakesTest -->
-    </test> <!-- Get Requests -->
-    <test name="Post Requests" duration-ms="8" started-at="2019-04-08T09:14:17Z" finished-at="2019-04-08T09:14:17Z">
-    </test> <!-- Post Requests -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- removeTask -->
+      </class> <!-- apitests.com.avlview.app.GETMethods.removeTaskTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

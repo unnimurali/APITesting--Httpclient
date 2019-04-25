@@ -65,6 +65,7 @@ public class getvehiclemodelsTest extends TestBase {
 		int firstIndex = serviceurl.indexOf(':');
 		String scheme = serviceurl.substring(0, firstIndex).trim();
 
+		// int startIndex = url.indexOf("app");
 		int startIndex = url.indexOf("app");
 		int endIndex = url.indexOf("api");
 

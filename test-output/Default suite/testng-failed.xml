@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="apitests.com.avlview.app.POSTMethods.getSummaryReportTest">
+      <class name="apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest">
         <methods>
           <include name="setup"/>
-          <include name="getSummaryReport"/>
+          <include name="gettripdetailsSG"/>
         </methods>
-      </class> <!-- apitests.com.avlview.app.POSTMethods.getSummaryReportTest -->
+      </class> <!-- apitests.com.avlview.app.POSTMethods.gettripdetailsSGTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

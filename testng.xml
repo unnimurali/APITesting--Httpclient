@@ -4,7 +4,7 @@
 
 	<listeners>
 		<listener class-name="com.avlview.ExtentReporterListner.ExtentReporterNG" />
-		<listener class-name="com.avlview.listners.TestAnnotationTransformerListener" />
+		<listener class-name="com.avlview.listners.TestAnnotationTransformerListener" /> 
 	</listeners>
 
 	<test name="Get Requests">
